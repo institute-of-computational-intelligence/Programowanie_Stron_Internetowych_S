@@ -1,0 +1,40 @@
+body
+{
+    background-color: silver;
+    font-family: Verdana;
+    font-size: 18px;
+    background-image: url("logo.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+
+}
+
+div:first-child, div:last-child{background-color:gold}
+h1{font-size:24px}
+span {font-weight: bold}
+#zielony {color:green}
+#czerwony {color: red}
+
+#drugi {border:dashed 4px blue;}
+a:link { color: black; text-decoration: none }
+a:hover { color: gray; text-decoration: none }
+
+#trzeci
+{   
+    border-top-style:solid;
+    border-top-color:black;
+    border-top-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-color: 5px;
+    border-left-style:solid;
+    border-left-color: red;
+    border-left-width:5px;
+    border-right-style:solid;
+    border-right-color: red;
+    border-right-width:5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
