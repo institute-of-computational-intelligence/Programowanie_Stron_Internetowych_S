@@ -3,10 +3,64 @@ body
     background-color: silver;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
-
+    background-image: url("logo.png");
+    background-position-x: 100%;
+    background-repeat: no-repeat;
 }
 
 .ground
 {
     background-color: gold;
+}
+
+p
+{
+    font-size: 18px;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+#span_1_color
+{
+    color: green;
+}
+
+#span_2_color
+{
+    color: red;
+}
+
+#ramka_2
+{
+    border: 2px dashed blue;
+}
+
+#ramka_3
+{
+    border: 5px;
+    border-style: solid;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-left-color: red;
+    border-right-color: red;
+    border-radius: 20px;
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: grey;
+}
+
+#div2p2
+{
+    text-align: right;
 }
