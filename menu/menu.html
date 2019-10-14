@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="pl-PL">
+<head>
+  <meta charset="utf-8">
+
+  <title>Menu</title>
+  <meta name="description" content="Menu">
+  <meta name="author" content="Mateusz Wilk">
+
+  <link rel="stylesheet" href="css/menu.css">
+  
+</head>
+
+<body>
+  
+    <nav>
+        <ul>
+            <li><a href="#">M1</a>
+                <ul>
+                    <li><a href="#">SM1</a></li>
+                    <li><a href="#">SM2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">M2</a>
+                <ul>
+                    <li><a href="#">SM1</a></li>
+                    <li><a href="#">SM2</a></li>
+                    <li><a href="#">SM3</a>
+                        <ul>
+                            <li><a href="#">SSM1</a></li>
+                            <li><a href="#">SSM2</a></li>
+                            <li><a href="#">SSM3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">M3</a></li>
+        </ul>
+    </nav>
+
+<script>
+var subMenus = document.querySelectorAll('ul > li > a + ul');
+
+for(var i = 0; i < subMenus.length; i++) {
+    subMenus[i].parentNode.classList.add("hasSubMenu")
+}
+
+</script>
+</body>
+</html
