@@ -1,0 +1,65 @@
+body {
+    background-image: url("logo.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: silver;
+    font-style: Verdana;
+    font-size: 18px;
+}
+
+span{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.goldDiv {
+    background-color: gold;
+  }
+
+#greenspan{
+    color: green;
+}
+#redspan{
+    color: red;
+}
+
+.ramka {
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+
+
+
+.border {
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+
+    border-left-color: red;
+    border-right-color: red;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-left-style: solid;
+    border-right-style: solid;
+
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: silver;
+  }
+
+  .alligment{
+    text-align: right;
+  }
