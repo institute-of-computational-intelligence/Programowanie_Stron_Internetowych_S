@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <style>
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+      }
+
+      nav a {
+        margin-left: 15px;
+      }
+
+      .dd {
+        position: relative;
+      }
+
+      .dc {
+        display: none;
+      }
+
+      .dc a {
+        padding: 10px;
+      }
+
+      .dd:hover .dc {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+      <nav>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <div class="dd">
+            <a class="btn">Dropdown 
+            </a>
+            <div class="dc">
+              <a href="#">Link 1</a>
+            </div>
+          </div> 
+        </div>
+    <script>
+    </script>
+  </body>
+</html>
