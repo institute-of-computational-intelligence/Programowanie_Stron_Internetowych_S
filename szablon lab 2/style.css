@@ -1,0 +1,43 @@
+.tlo{
+    background-color: #C0C0C0;
+}
+.color_div{
+    background-color: #FFD700;
+}
+body{
+    font-family: Verdana;
+}
+.h1{
+    font-size: 24px;
+}
+.span{
+    color: rgb(80, 184, 19);
+}
+.span1{
+    color:rgb(161, 18, 18);
+}
+body{
+    background-image: url(logo.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.border{
+    border-top-color: blue;
+    border-top-style: dashed;
+    border-bottom-color: blue;
+    border-bottom-style: dashed;
+    border-left-color: blue;
+    border-left-style: dashed;
+    border-right-color: blue;
+    border-right-style: dashed;
+    border-width: 2px;
+    
+}
+.border1{
+    border-top-color: black;
+    border-top-style: dashed;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+    border-width: 5px;
+
+}
