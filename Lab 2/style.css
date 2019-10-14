@@ -1,0 +1,32 @@
+body{
+    background-color:silver;
+    font-family:Verdana;
+    font-size: 18px;
+}
+div.zloty{
+    background-color:gold;
+}
+h1{
+    font-size: 24px;
+}
+span{
+    font-weight: bold;
+}
+#pierwszy{
+    color: green;
+}
+#trzeci{
+    color: red;
+}
+img{
+    position: absolute; right: 20px; top: 10px;
+}
+#drugi{
+    border:2px dashed blue;
+}
+#trzy{
+    border-right-style: dashed;border-right-width:2px;
+    border-bottom-style: dashed;border-bottom-width:2px;
+    border-top-style: dashed;border-top-width:2px;
+    border-left-style: dashed;border-left-width:2px;
+}
