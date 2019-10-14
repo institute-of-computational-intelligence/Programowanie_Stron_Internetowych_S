@@ -1,0 +1,66 @@
+body {
+  background-color: silver;
+}
+
+.zloty {
+  background-color: gold;
+}
+
+html,
+body {
+  font-family: verdana;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+body {
+  font-size: 19px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#span1 {
+  color: green;
+}
+
+#span3 {
+  color: red;
+}
+.logo {
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  z-index: 1;
+  width: 137px;
+  height: 160px;
+  float: right;
+}
+
+#div2 {
+  border-style: dashed;
+  border-color: blue;
+  border-width: 2px;
+}
+
+#div3 {
+  border-style: solid;
+  border-top-color: black;
+  border-bottom-color: black;
+  border-left-color: red;
+  border-right-color: red;
+  border-width: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: gray;
+}
+#p2 {
+  text-align: right;
+}
