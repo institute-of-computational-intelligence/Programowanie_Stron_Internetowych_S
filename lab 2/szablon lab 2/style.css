@@ -1,0 +1,62 @@
+body {
+    background-image: url("logo.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: silver;
+    font-style: Verdana;
+    font-size: 18px;
+}
+
+span{
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.zloty {
+    background-color: gold;
+}
+
+#zielonyspan{
+    color: green;
+}
+#czerwonyspan{
+    color: red;
+}
+
+.ramka {
+    border-width:2px;
+    border-style:dashed;
+    border-color:blue;
+}
+
+.ramkarb {
+    border-top-color: black;
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-left-color: red;
+    border-right-color: red;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+.alignright{
+	text-align: right;
+}
