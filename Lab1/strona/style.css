@@ -1,0 +1,83 @@
+*,html,body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: #ccc;
+}
+
+.header h1 {
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    padding-top:0px;
+    font-size: 50px;
+}
+
+.main {
+    width: 100%;
+    min-height: 700px;
+    height:auto;
+    background: #aaa;
+}
+
+.side-menu {
+    width:20%;
+    height:700px;
+    float:left;
+    background: #888;
+}
+
+.side-content {
+    width:80%;
+    height:700px;
+    float:left;
+    background: none;
+}
+
+.side-content-box {
+    width:80%;
+    min-height:200px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(255,255,255,0.6);
+}
+
+.side-content-box h1 {
+    margin-left: 25px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.side-content-box p {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.table1 {
+    margin-left:50px;
+    margin-top:10px;
+}
+
+.table1, .table1 th, .table1 td {
+    border: solid 2px #444;
+}
+
+ol {
+    float:left;
+    margin-left:50px;
+    margin-top:10px;
+}
+
+#iframe1 {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
