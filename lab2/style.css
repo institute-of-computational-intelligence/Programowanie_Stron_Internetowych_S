@@ -1,0 +1,61 @@
+
+*{
+    font-size:18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    background-color: silver;
+}
+
+div:first-of-type,div:last-of-type{
+    background-color: gold;
+    border-top:black 5px solid;
+    border-bottom:black 5px solid;
+    border-left:red 5px solid;
+    border-right:red 5px solid;
+    border-radius:20px;
+}
+
+div:first-of-type span{
+    color:green;
+}
+
+div:last-of-type span{
+    color:red;
+}
+div:nth-of-type(2){
+    border: 2px blue dotted;
+}
+
+div:nth-of-type(2) p:nth-of-type(2){
+    text-align: right;
+}
+
+h1{
+    font-size:24px;
+}
+
+span{
+    font-weight: bold;
+}
+
+div.logo{
+    background-image: url('/logo.png');
+    background-repeat:no-repeat;
+    position: absolute;
+    top:0;
+    right:0;
+    width:160px;
+    height: 160px;
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:gray;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        figure{
+            height: auto;
+            width:100%;
+        }
+
+        img{
+            width:20%;
+        }
+        .img{
+            display:flex;
+
+        }
+       .img figcaption{
+            align-self: flex-end;
+    }
+    .red{
+        background-color: red;
+    }
+
+    .blue{
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+<article>
+    <h1>Naglowek 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur non vel cumque aut deserunt, soluta, unde quas sapiente reprehenderit possimus voluptatem voluptas minima illo iure architecto quia animi veritatis? Quos.</p>
+</article>
+<hr>
+<article >
+    <h1>Naglowek 2</h1>
+    <figure class="img">
+    <img src="logo-pcz.jpg" alt="czewa">
+    <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam necessitatibus ipsa minima delectus. Eligendi temporibus aspernatur doloremque quasi autem delectus odio harum, voluptatem, neque earum quia laboriosam recusandae atque!</figcaption>
+    </figure>
+</article>
+    <hr>
+    <article>
+        <h1>Naglowek 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nihil! Adipisci hic quod, perspiciatis laborum architecto debitis id. Rerum consectetur accusantium mollitia alias voluptas praesentium obcaecati ipsa harum aperiam numquam.</p>
+    </article>
+    <table border=2>
+        <thead>
+            <tr>
+                <th>Cos1</th>
+                <th>Cos2</th>
+                <th>Cos3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>jeden</td>
+                <td>dwa</td>
+                <td>trzy</td>
+            </tr>
+            <tr>
+                    <td>jeden</td>
+                    <td>dwa</td>
+                    <td>trzy</td>
+                </tr>
+        </tbody>
+    </table>
+    <a href="./folder/strona1.html" target="_blank"><p>Strona 1:</p></a>
+    <a href="./folder/strona2.html" target="_blank"><p>Strona 2:</p></a>
+    <a href="./folder/strona3.html" target="_blank"><p>Strona 3:</p></a>
+    
+    <iframe src="https://wimii.pcz.pl/" frameborder="2"></iframe>
+
+    <script>
+
+
+        let zmienna=0;
+
+    const Naglowek1=document.querySelector('h1');
+    Naglowek1.addEventListener('click',()=>{
+        if(zmienna<6){
+            Naglowek1.classList.toggle('red');
+        }
+       else{
+           Naglowek1.classList.toggle('blue');
+       }
+       zmienna++;
+    })
+
+    
+    </script>
+</body>
+</html>
