@@ -25,7 +25,7 @@ div:last-of-type span{
     color:red;
 }
 div:nth-of-type(2){
-    border: 2px blue dotted;
+    border: 2px blue dashed;
 }
 
 div:nth-of-type(2) p:nth-of-type(2){
