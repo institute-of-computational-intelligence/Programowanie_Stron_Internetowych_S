@@ -1,0 +1,66 @@
+body{
+    background-color:silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*background-image: url("http://www.pcz.pl/sites/all/themes/pcz/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 0px;
+    */
+}
+
+.logo{
+    float: right;
+}
+
+.first{
+    background-color:gold;
+
+}
+
+.last{
+    background-color:gold;
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+    border-left: solid red 5px;
+    border-right: solid red 5px;
+    border-radius: 20px;
+}
+
+.second{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: blue;
+}
+
+h1{
+    font-size: 24px;
+}
+
+p{
+    font-size:18px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#first_span{
+    color:green;
+}
+
+#last_span{
+    color:red;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:grey;
+}
+
+.second p{
+    text-align: right;
+}
