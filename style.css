@@ -1,0 +1,57 @@
+body{
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.goldenDiv{
+    background-color: gold;
+}
+h1{
+    font-size: 24px;
+}
+span{
+    font-weight: bold;
+}
+#span1{
+    color: green;
+}
+#span3{
+    color: red;
+}
+#div2{
+    border: 2px dashed blue;
+}
+#div3{
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+
+    border-radius: 20px;
+}
+a{
+    color: black;
+    text-decoration: unset;
+}
+a:hover{
+    color: grayk;
+    text-decoration: unset;
+}
+#param2{
+    text-align: right;
+}
+#dragFrom{
+    display: block;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    float: right;
+    z-index: 1;
+}
+#dragTo{
+    width: 200px;
+    height: 200px;
+
+    background-color: azure;
+}
