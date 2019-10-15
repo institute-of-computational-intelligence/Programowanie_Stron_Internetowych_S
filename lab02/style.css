@@ -1,0 +1,54 @@
+body {
+    background-color: silver;
+    font-family: Verdana;
+    font-size: 18px;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.nr1 {
+    background-color: gold;
+}
+
+.nr2 {
+    border: 2px blue dashed;
+}
+
+.nr3 {
+    background-color: gold;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    border-left: 5px red solid;
+    border-right: 5px red solid;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+span {
+    font-weight: bold;
+}
+
+span#d1 {
+    color: green;
+}
+
+div#d3 span {
+    color: red;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: silver;
+}
+
+p#p2 {
+    text-align: right;
+}
