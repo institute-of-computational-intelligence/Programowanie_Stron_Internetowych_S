@@ -1,0 +1,56 @@
+body {
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.x{
+    background-color: gold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+span {
+    font-weight: bold;
+}
+
+div:first-of-type span {
+    color: green;
+}
+
+div:nth-of-type(3) span {
+    color: red;
+}
+
+img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+div:nth-of-type(2) {
+    border: 2px dotted blue;
+}
+
+div:nth-of-type(3) {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+div:nth-of-type(2) p:nth-of-type(2) {
+    text-align: right;
+}
