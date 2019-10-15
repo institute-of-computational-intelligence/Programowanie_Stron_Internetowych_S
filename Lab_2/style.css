@@ -1,9 +1,6 @@
 body{
     background-color:silver;
     font-family: Verdana;
-    background-image: url("http://www.pcz.pl/sites/all/themes/pcz/images/logo.png");
-    background-position: top right;
-    background-repeat: no-repeat;
 }
 .gold{
     background-color:gold;
@@ -44,4 +41,9 @@ a:hover{
 }
 .secondp{
     text-align: right;
+}
+img{
+    position:absolute;
+    top:0px;
+    right: 0px;
 }
