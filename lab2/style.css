@@ -16,30 +16,30 @@ span {
     background: gold;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    border-right: 5px solid red;
+    border-left:  5px solid red;
+    border-radius: 20px;
 }
 
 .first {
     background: gold;
 }
 
-#first-span {
-    color: green;
-}
-
-#last-span {
-    color: red;
-}
-
 .middle {
     border: 2px dashed blue;
 }
-
-header {
+.image{
     display: flex;
     justify-content: flex-end;
-
+}
+.image img {
+    position: absolute;
 }
 
+.middle p:last-child {
+    text-align: right;
+    color: slategray;
+}
 a {
     text-decoration: none;
     color: black;
@@ -49,8 +49,10 @@ a:hover {
     color: silver;
 }
 
-.middle p:last-child {
-    text-align: right;
-
-    color: slategray;
+#first-span {
+   color: green;
+}
+                
+#last-span {
+    color: red;
 }
