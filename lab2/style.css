@@ -1,0 +1,56 @@
+html {
+    background: silver;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.last {
+    background: gold;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.first {
+    background: gold;
+}
+
+#first-span {
+    color: green;
+}
+
+#last-span {
+    color: red;
+}
+
+.middle {
+    border: 2px dashed blue;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: silver;
+}
+
+.middle p:last-child {
+    text-align: right;
+
+    color: slategray;
+}
