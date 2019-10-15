@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang  = "pl-PL">
+    <head>
+        <title>Moja pierwsza strona</title>
+        <meta name  =Bohdan surname = Kucher>
+    </head>
+    <h1>
+        Zagolowok
+    </h1>
+    <strong>Strong</strong>
+    <body>
+      <strong>  sdfsdfsdf <br>ksdfsdf
+        sldfsdlf<hr>sldfsdf</strong>
+        <em>  sdfsdfsdf <br>ksdfsdf
+            sldfsdlf<hr>sldfsdf</em>
+            <code>
+                ksdjfbskdjfbsdf
+            </code>
+            <hr>
+            <samp>
+                 ksdjfbskdjfbsdf
+            </samp>
+            <kbd>Keyboard</kbd>
+             <p>Tekst paragrafu…</p>
+             <table>
+                    <tr>
+                     <th>Imiê</th>
+                     <th>Nazwisko</th>
+                    </tr>
+                    <tr>
+                     <td>Anna</td>
+                     <td>Nowak</td>
+                    </tr>
+                    <tr>
+                     <td>Jan</td>
+                     <td>Kowalski</td>
+                    </tr>
+                    </table>
+                     
+    </body>
+</html>
