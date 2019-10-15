@@ -1,0 +1,53 @@
+h1
+{
+    font-size: 24px;
+}
+body
+{
+    background-color: silver;
+    font-family: Verdana;
+}
+.pierwszy
+{
+    background-color: gold;
+}
+.trzeci
+{
+    background-color: gold;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black red;
+    border-radius: 20px;
+}
+p{
+    font-size: 18px;
+}
+span{
+    font-weight: bold;
+}
+#spanwpierwszydiv{
+    color: green;
+}
+#spanwtrzecidiv{
+    color: red;
+}
+.drugi{
+    border-style: dashed;
+    border-color: blue;
+    border-width: 2px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:gray;
+}
+#costam{
+    text-align: right;
+}
+img{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
