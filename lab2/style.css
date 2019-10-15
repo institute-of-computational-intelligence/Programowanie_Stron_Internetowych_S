@@ -1,0 +1,62 @@
+html{
+    background: silver;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+#span1{
+    color: green;
+}
+
+#span3{
+    color: red;
+}
+
+span{
+    font-weight: bold;
+}
+
+.div1{
+    background: gold;
+}
+
+.div2{
+    border: blue 2px dashed;
+}
+
+.div3{
+    background: gold;
+    border-top: black 5px solid;
+    border-bottom:  black 5px solid;
+    border-left: red 5px solid;
+    border-right: red 5px solid;
+    border-radius: 20px;
+}
+
+.obrazek{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.obrazek img{
+    position: absolute;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:grey; 
+}
+
+.div2 p:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
