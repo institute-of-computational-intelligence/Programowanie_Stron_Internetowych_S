@@ -1,0 +1,34 @@
+body{
+    /* background-color: black; */
+    font-family: Verdana;
+    font-size: 18px;
+    background-image: url("logo.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.gol{
+    background-color: gold;
+}
+h1{
+    font-size: 24px;
+}
+span{
+    font-weight: bold;
+}
+#kolor-tekstu{
+    color: green;
+    
+}
+#trzeci{
+    color: red  ;
+}
+div:nth-child(2){
+border: 2px dashed blue;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: gray;
+}
