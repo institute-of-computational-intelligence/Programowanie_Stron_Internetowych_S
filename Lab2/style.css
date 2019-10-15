@@ -1,0 +1,70 @@
+html {
+    background-color: silver;   
+}
+
+h1 {
+    display: block;
+    font-size: 24px;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.div_1 {
+    background-color: gold;  
+}
+
+.div_2 {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: blue;
+}
+
+.div_3 {
+    background-color: gold;
+    border-style: solid;
+    border-top-color: black;    border-bottom-color: black;
+    border-top-width: 5px;        border-bottom-width: 5px;
+
+    border-left-color: red;     border-right-color: red;
+    border-left-width: 5px;       border-right-width: 5px;
+
+    border-radius: 20px;
+    
+    
+}
+
+p span {
+    font-weight: bold;
+    
+}
+
+.spanDiv1 {
+    color: green;
+}
+
+.spanDiv2 {
+    text-align: center;
+}
+
+.spanDiv3 {
+    color: red;
+}
+
+a {
+    color: Black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
