@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: steelblue;
+}
+#container
+{
+    
+    margin-left: auto;
+    margin-right:auto;
+}
+#naglowek{
+    background-color:steelblue;
+    color: white;
+    text-align: center;
+    font-size:100px;
+    padding: 10px;
+    font-weight: 800;
+}
+#menu{
+    padding:2%;
+    background-color:rgb(16, 86, 121);
+    float: left;
+    width: 16%;
+    height: 700px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+#content
+{   
+    background-color: rgb(104, 157, 175);
+    float: left;
+    padding: 2%;
+    width:76%;
+    height: 700px;
+
+
+}
+#footer{
+    background-color: steelblue;
+    clear: both;
+    text-align: right;
+    color: white;
+    height: 60px;
+    padding-right: 30px;
+}
+.Naglowek{
+    width:190px;
+    height:35px;
+    color:white;
+    background-color: steelblue;
+    font-weight: 1000px;
+    font-size:30px;
+}
+.Tresc{
+    width:70%;
+    border:2px dotted gray;
+    font-size: 20px;
+}
+.Autor{
+float: left;
+width: 80%;
+height: 40px;
+}
+.Data{
+float: left;
+text-align: right;
+}
+.button{
+    margin-left:35%;
+    width: 25%;
+    height: 30px;
+    color:white;
+    background-color: steelblue;
+    text-align: center;
+}
+.menu2{
+    padding-top:10px;
+    padding-bottom:10px;
+    
+    
+
+    
+}
+
+
+.menu2:hover
+{
+    color: white;
+    background-color: steelblue;
+    
+}
+.button:hover
+{
+    color: white;
+    background-color: #3571a3;
+}
