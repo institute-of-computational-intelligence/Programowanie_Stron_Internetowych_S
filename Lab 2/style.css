@@ -25,8 +25,19 @@ img{
     border:2px dashed blue;
 }
 #trzy{
-    border-right-style: dashed;border-right-width:2px;
-    border-bottom-style: dashed;border-bottom-width:2px;
-    border-top-style: dashed;border-top-width:2px;
-    border-left-style: dashed;border-left-width:2px;
+    border-right-style: solid;border-right-width:5px;border-right-color:red;
+    border-bottom-style: solid;border-bottom-width:5px;border-bottom-color:black;
+    border-top-style: solid;border-top-width:5px;border-top-color:black;
+    border-left-style: solid;border-left-width:5px;border-left-color:red;
+	border-radius:20px; 
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+a:hover{
+	color:gray;
+}
+#dd{
+	text-align:right;
 }
