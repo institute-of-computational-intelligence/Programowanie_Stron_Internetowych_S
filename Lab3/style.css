@@ -1,0 +1,39 @@
+html{
+    background-color: steelblue;
+}
+h1.strona{
+    font-size: 65px;
+    font-weight: bald;
+    color:white;
+    text-align: center;
+    height: 60px;
+}
+div.poczatek{
+
+    font-size: 18px;
+    position: static;
+    background-color: skyblue;
+    width:10%;
+    float:left; 
+    padding:0px 10px;
+}
+div p.menu{
+font-weight: bolder;
+}
+footer{
+    text-align: right;
+    color: white;
+    font-size: 24px;
+    line-height: 19vh;
+	bottom:0;
+	height:60px;		/* Wysokość stopki */
+	margin-right: 15px
+}
+h2.news{
+    color: white;
+    font-size: 30px;
+    border: 2px solid 
+}
+p.menu{
+    font-weight: bold;
+}
