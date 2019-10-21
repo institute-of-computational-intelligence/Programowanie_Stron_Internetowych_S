@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 20vh;
+   background-color:steelblue;
+   text-align:center;
+
+}
+header h1{
+    line-height: 20vh;
+    font-size:70px;
+    color:white;
+}
+main{
+    height: 70vh;
+    display:flex;
+}
+
+main section.menu{
+    width:20%;
+    background-color:rgb(90,120,160);
+}
+main section.menu p{
+    font-weight: bold;
+    margin:20px;
+}
+main section.menu ul{
+    list-style: none;
+}
+main section.menu ul li{
+    margin:20px;
+}
+
+main section.menu ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+main section.menu ul li a:hover{
+    border:2px blue solid;
+    background-color: blue;
+}
+
+main section.maincontent{
+    background-color:rgba(90,130,160,0.7);
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+main section.maincontent>article{
+ width: 70%;
+}
+main section.maincontent .section{
+    height: 20vh;
+    border:2px gray solid;
+    position: relative;
+}
+
+.section .autor{
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+
+.section .data{
+    position: absolute;
+    right:20px;
+    top:0;
+}
+
+.first .section >p{
+position: absolute;
+top:60px;
+left:5px;
+text-align: center;
+}
+
+
+.first .section button{
+    position: absolute;
+    left:50%;
+    bottom:10px;
+    padding:5px;
+    background-color: steelblue;   
+    border:2px solid transparent; 
+    font-size:20px;
+    color:white;
+}
+
+.second .section  >p{
+position: absolute;
+top:60px;
+left:5px;
+text-align: center;
+}
+
+main section.maincontent article .naglowek{
+    border:2px none solid;
+    width:150px;
+    height: 50px;
+    background-color: steelblue;
+    border-radius:15%;
+    font-size:20px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
+
+footer{
+    height: 10vh;
+    background-color:steelblue;
+    text-align:right;
+
+}
+footer p{
+    margin-right:15px;
+    font-size:25px;
+    line-height: 10vh;
+    color:white;
+}
