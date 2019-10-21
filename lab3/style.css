@@ -1,0 +1,62 @@
+#naglowek {
+  background-color: cornflowerblue;
+  height: 100px;
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+#strona {
+  text-align: center;
+}
+
+#menu {
+  background-color: lightslategray;
+  height: 300px;
+  width: 20%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#tresc {
+  background-color: white;
+  height: 300px;
+  width: 80%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#stopka {
+  background-color: cornflowerblue;
+  height: 50px;
+  width: 100%;
+  float: left;
+  color: white;
+}
+
+#copy {
+  text-align: right;
+}
+
+.styl_linku {
+  text-decoration: none;
+  color: black;
+}
+
+.styl_headeru {
+  background-color: cornflowerblue;
+  width: 30%;
+  text-align: center;
+  color: aliceblue;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+}
+
+.styl_tresci {
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+}
