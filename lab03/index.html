@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>PSI</title>
+    <meta name="author" content="MZ">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="description" content="Strona PSI">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        Strona przedmiotu PSI
+    </div>
+    <div id="left">
+        <div>Menu</div>
+        <div id="current">Strona główna</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+    </div>
+    <div id="right">
+        <div class="post">
+            <h2 class="post-header">News number 1</h2>
+            <div class="post-body">
+                <span class="author"><b>Autor:</b> MZ</span>
+                <span class="date"><b>Data:</b> 23.10.2016</span>
+                <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices lacus eget purus auctor,
+                    consequat ullamcorper metus elementum. Vestibulum sodales mauris nec elit ultrices, non sollicitudin
+                    sem pulvinar. Proin eleifend eget eros nec sagittis. Mauris pretium augue lectus, a iaculis nibh
+                    imperdiet nec. Maecenas et nibh consequat, sodales enim eu, ultricies massa. Sed ac venenatis
+                    tortor. Suspendisse nulla ipsum, pellentesque quis risus ac, vulputate rutrum massa. Aenean ac
+                    faucibus metus. Ut dapibus, augue at vulputate pulvinar, tellus risus cursus nunc, convallis
+                    condimentum diam magna at ante. Duis ultrices ornare ex, in placerat velit maximus id. Donec
+                    consequat urna eget nunc ornare, ac dignissim lorem tincidunt. Pellentesque consequat feugiat
+                    tincidunt. Duis tellus orci, lobortis non fringilla quis, vulputate eu nibh.
+                </p>
+                <button class="read-more">czytaj dalej</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">News number 2</div>
+            <div class="post-body">
+                <span class="author"><b>Autor:</b> MZ</span>
+                <span class="date"><b>Data:</b> 23.10.2016</span>
+                <p class="content">
+                    Etiam eget bibendum eros, id euismod diam. Aenean et odio quis ligula tempus malesuada. Cras egestas
+                    rhoncus justo, vel cursus sapien venenatis vel. Ut ornare ullamcorper libero, sed ornare dolor
+                    gravida vel. Integer ultricies lectus vel pharetra facilisis. Duis ultrices sem sed semper aliquet.
+                    Nunc egestas blandit ante, in posuere nisi suscipit nec. Nam elementum libero orci, ut accumsan
+                    ipsum blandit non. Duis felis neque, tincidunt a nunc nec, gravida tempus velit. Duis ornare
+                    bibendum vehicula. Pellentesque facilisis dignissim urna, eget malesuada sem egestas eget. Mauris ex
+                    nisi, placerat vel dui in, ullamcorper tristique magna. Nulla sodales facilisis nisl non facilisis.
+                    Etiam et sapien non enim posuere auctor vestibulum eu urna. Donec volutpat, nunc ac consectetur
+                    interdum, quam nisl bibendum metus, eu mollis nulla est in mauris.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <span class="copyright-span">Copyright 2016</span>
+    </div>
+    <script>
+        var x = () => document.getElementById("right").style.height = (innerHeight-176)+"px";
+window.onload = x;
+window.onresize = x;
+
+    </script>
+</body>
+</html>
