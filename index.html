@@ -31,13 +31,32 @@
 			</p>
 		</div>
 		<div class="last">
-			<h1>Nagłówek 1</h1>
+			<h1 class="accordion">Nagłówek 1</h1>
 			<p>
 				To jest przykładowy <span id="last_span">tekst...</span>
-			</p>
-			<p>
+			<br><br>
 				Oto nasz odnośnik: <a href="http://www.pcz.pl" target="_blank">link</a>
 			</p>
 		</div>
+
+
+<script>
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 	</body>
 </html>
