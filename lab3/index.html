@@ -9,33 +9,81 @@
 </head>
 
 <body>
-
-	<header>
-        <h1>Nagłowek 1</h1>
-		
-	</header>
-
-	<aside>
-		<nav>
-			<ul>
-				<li> menu</li>
-			</ul>
-		</nav>
-	</aside>
 	
-	<section>
-		<article>
-			<p>Główna treść</p>
-		</article>
-		
-	</section>
+		<header>
+			<h1>Strona przedmiotu PSI</h1>
+		</header>
+		<main role="main">
+			<aside>
+				<nav>
+					<h3>Menu</h3>
+					<ul>
+						<li><a href='#'>Strona główna</a></li>
+						<li><a href='#'>HTML</a></li>
+						<li><a href='#'>CSS</a></li>
+						<li><a href='#'>Java Script</a></li>
+					</ul>
+				</nav>
+			</aside>
+				
+			<section>
+				<article>
+					<header>
+							<h2>News numer 1</h2>
+					</header>
+					<div class='article-body'>
+						<span class="autor"><b>Autor: </b>MZ</span>
+						<span class="data"><b>Data: </b>23.10.2019</span>
+						<div class='clear'></div>
+						<p class='short'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed libero ultricies, lacinia ex a, venenatis dui. Curabitur sodales rhoncus nisi, id placerat ligula posuere quis. Fusce elementum elementum sapien ac mollis. </p>
+						<p class="all">Cras mollis purus non libero consectetur viverra nec ac quam. Aenean commodo, quam eget bibendum hendrerit, ante metus interdum ante, in venenatis odio justo non nisl. Suspendisse commodo semper est, ut feugiat nibh facilisis quis. Nullam nisl risus, feugiat non egestas quis, dapibus hendrerit nibh. Fusce maximus a ante id fermentum. Sed molestie enim et sem pellentesque fringilla. Ut sapien eros, tempus quis erat et, consequat tempor orci.</p>
+						<div class="center">
+							<button class="read-more">Czytaj więcej</button>
+						</div>
+						
+					</div>
+	
+				</article>
+				<article>
+						<header>
+								<h2>News numer 1</h2>
+						</header>
+						<div class='article-body'>
+							<span class="autor"><b>Autor: </b>MZ</span>
+							<span class="data"><b>Data: </b>23.10.2019</span>
+							<div class='clear'></div>
+							<p class='short'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed libero ultricies, lacinia ex a, venenatis dui. Curabitur sodales rhoncus nisi, id placerat ligula posuere quis. Fusce elementum elementum sapien ac mollis. </p>
+							<p class="all">Cras mollis purus non libero consectetur viverra nec ac quam. Aenean commodo, quam eget bibendum hendrerit, ante metus interdum ante, in venenatis odio justo non nisl. Suspendisse commodo semper est, ut feugiat nibh facilisis quis. Nullam nisl risus, feugiat non egestas quis, dapibus hendrerit nibh. Fusce maximus a ante id fermentum. Sed molestie enim et sem pellentesque fringilla. Ut sapien eros, tempus quis erat et, consequat tempor orci.</p>
 
+							<div class="center">
+								<button class="read-more">Czytaj więcej</button>
+							</div>
+						</div>
+		
+					</article>
+			</section>
+
+		</main>
+		<footer>
+			<p>Copyright © 2019</p>
+		</footer>
+		<div class='clear'></div>
 
 	
-	<footer>
-		<p>Stopka...</p>
-	</footer>
-	<div class='clear'></div>
+	
+<script>
+var readMoreButtons = document.querySelectorAll('article .read-more');
+
+for (const readMore of readMoreButtons) {
+	readMore.addEventListener('click', function(event) {
+
+		this.parentElement.parentElement.querySelector('.all').style.display = "block";
+		readMore.style.display = "none";
+  })
+}
+
+</script>
+	
 </body>
 
 </html>
