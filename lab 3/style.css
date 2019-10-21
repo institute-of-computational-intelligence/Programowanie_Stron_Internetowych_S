@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 18px;
+}
+
+header {
+    background-color: #4682B4;
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    
+}
+
+content {
+    display: flex;
+}
+
+menu {
+    width: 20%;
+    background-color: #a4d4ff;
+    padding: 20px;
+    margin: 0;
+}
+
+menu h3 {
+    margin: 0 0 10px 0;
+}
+
+menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+menu ul li {
+    padding: 0;
+    margin: 10px 0 10px 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    width: 80%;
+    padding: 50px 50px 0 50px;
+    background-color: #eaf5ff;
+}
+
+.naglowek {
+    border-radius: 10px 10px 0 0;
+    display: inline-block;
+    padding: 5px;
+    background-color: #4682B4;
+    color: #ffffff;
+}
+
+.naglowek h3 {
+    margin: 5px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.skrot {
+    display: grid;
+    border: 1px;
+    border-style: solid;
+    border-color: #b5b5b5;
+    padding: 20px;
+}
+
+.AutorData {
+    display: block;
+}
+
+.AutorData #Autor {
+    float: left;
+}
+
+.AutorData #Data {
+    float: right;
+}
+
+.CzytajDalej {
+    background-color: #4682B4;
+    padding: 5px 10px;
+    margin: 0 auto;
+    color: #ffffff;
+    display: table;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #4682B4;
+    padding: 5px 50px 5px 50px;
+    margin: 0;
+    font-size: 12px;
+    text-align: right;
+    color: #fff;
+}
+
