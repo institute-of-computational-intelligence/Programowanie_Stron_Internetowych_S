@@ -2,7 +2,8 @@ body{
     background-color:silver;
     background-image:url("http://www.pcz.pl/sites/all/themes/pcz/images/logo.png");
     font-family: verdana;
-    font-size:18px;
+    font-size:18px;background-repeat: no-repeat;
+    background-position:top right;
 }
 .first_last
 {
@@ -32,6 +33,8 @@ span
 {
     border:5px solid black;
     border-radius: 20px;
+    border-left:5px solid red;
+    border-right:5px solid red;
 }
 #two{
     border:2px dashed blue;
