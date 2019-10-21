@@ -1,0 +1,49 @@
+header {background-color: aqua}
+header>div
+{
+height:150px; padding:25px 0 0 260px;
+box-sizing: border-box;
+}
+.part {width:1024px; margin: auto}
+.logos {text-decoration: overline; }
+.mmenu {background-color:darkturquoise ; width:21%;height: 100%; float:left; padding:1px 0px;
+    border-right:1px solid black; font-size: large;box-sizing: border-box} 
+footer {background-color: red;background-color:#ddd; height:50px;position:absolute;
+    bottom:0;width:100%;}
+article {background-color: salmon;min-height:100%}
+nav>ul {margin:0; padding:0}
+nav>ul a {text-decoration:none}
+nav>ul a:hover {background-color:orange;}
+section {float: left; width:79% ;padding: 0px; box-sizing: border-box;  }
+.main {position: relative;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+    margin:0;
+    padding:0;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+     min-height: 100%;
+    position: relative;
+  }
