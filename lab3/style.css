@@ -44,8 +44,7 @@ main section.menu ul li a{
     color:white;
 }
 
-main section.menu ul li a:hover{
-    border:2px blue solid;
+main section.menu ul li:hover{
     background-color: blue;
 }
 
