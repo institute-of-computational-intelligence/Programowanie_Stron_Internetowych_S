@@ -1,0 +1,115 @@
+.StronaTytulowa {
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: x-large;
+    font-family: fantasy;
+    color: white;
+    background-color: steelblue
+    
+}
+
+.kontenerDwochOkienek {
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+
+.Menu {
+    width: 20%;
+    background-color:rgb(164, 180, 209);
+}
+
+.Menu a {
+    color: black;
+    display: block;
+
+    padding: 18px;
+    text-decoration: none;
+    line-height: 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;   
+}
+
+.Menu a:hover {
+    background-color: teal;
+}
+
+.Menu a.MenuOption {
+    font-weight: bold;
+}
+
+
+.GlownaTresc {
+    width: 80%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.GlownaTresc h2 {
+    border-style: solid;
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+    background-color: steelblue;
+    color: whitesmoke;
+    margin-bottom: -4px;
+    margin-right: 79%;
+}
+
+.GlownaTresc p {
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+    margin-top: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.GlownaTresc span.author {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.GlownaTresc span.data {
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.GlownaTresc span.textinside {
+    padding: 10px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.GlownaTresc button {
+    background-color: whitesmoke;
+    color: steelblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 150px;
+    height: 40px;
+    margin-left: 40%;
+
+}
+
+.Stopka {
+    height: 60px;
+    background-color:steelblue;
+
+    text-align: right;
+    color: white;
+    font-family: fantasy;
+
+    
+}
+
+.Stopka p {
+    margin-top: 0px;
+    float: right;
+    margin-top: 21px;
+    margin-right: 45px;
+}

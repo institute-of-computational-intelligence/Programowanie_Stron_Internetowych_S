@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3</title>
+        <meta name="Labki3" content="Laboratorium nr.3 - zrobione według szablonu" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="lab3style.css">
+
+        <style>
+            #more {display: none;}
+        </style>
+
+        <script>
+        function ReadMoreLess() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("ReadMoreLessButton");
+          
+            if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "czytaj wiecej"; 
+              moreText.style.display = "none";
+            } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "czytaj mniej"; 
+              moreText.style.display = "inline";
+            }
+          }
+        </script>
+
+    </head>
+
+    <body>
+        <div class="StronaTytulowa">
+            <h1>Strona Przedmiotu PSI </h1>            
+        </div>
+
+        <div class="kontenerDwochOkienek">
+            <div class="Menu">
+                    <li><a href="#iuntro.html" class="MenuOption">Menu</span></a></li>
+                    <li><a href="#iantro.html">Strona główna</a></li>
+                    <li><a href="#sintro.html">HTML</a></li>
+                    <li><a href="/lab3/ntro.html">CSS</a></li>
+                    <li><a href="#fintro.html">Java Script</a></li>         
+            </div>
+                   
+            <section class="GlownaTresc"> 
+                <article class="NewsNr1">
+                    <h2>News numer 1</h2>
+                    <p> <span class="author"><b>Author:</b> <i>MZ</i></span>
+                        <span class="data"><b>Data: </b><i>23.10.2016</i></span> <br><br>
+                        <span class="textinside"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis odio placerat mauris laoreet sollicitudin eu vulputate sapien. 
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ultrices odio eu sagittis fringilla. 
+                            Nullam bibendum neque id leo cursus, vitae blandit enim ornare. Nunc ut placerat tellus, non maximus ante. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Nullam ac tortor turpis. <span id="dots">...</span><span id="more">Maecenas rutrum massa nec rhoncus tincidunt. 
+                            Curabitur viverra magna at velit fermentum porta. Phasellus non placerat nisl. Ut arcu enim, vulputate rutrum convallis eget, tristique non massa. 
+                            Aliquam ac mollis nulla. Duis magna est, sodales vel tellus vehicula, euismod facilisis nisi. Pellentesque eu orci sagittis, porta ipsum a, eleifend tortor. 
+                            Duis est odio, volutpat eget consectetur eget, gravida eget libero. </span> 
+                        </span>
+                            <br><br>
+                            <button onclick="ReadMoreLess()" id="ReadMoreLessButton">czytaj wiecej</button>
+                        </p>
+                       
+                </article>
+                <article class="NewsNr2">
+                    <h2>News numer 1</h2>
+                    <p> <span class="author"><b>Author:</b> <i>MZ</i></span>
+                        <span class="data"><b>Data: </b><i>23.10.2016</i></span> <br><br>
+                        <span class="textinside">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis odio placerat mauris laoreet sollicitudin eu vulputate sapien. 
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ultrices odio eu sagittis fringilla. 
+                            Nullam bibendum neque id leo cursus, vitae blandit enim ornare. Nunc ut placerat tellus, non maximus ante. Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Nullam ac tortor turpis. Maecenas rutrum massa nec rhoncus tincidunt. 
+                            Curabitur viverra magna at velit fermentum porta. Phasellus non placerat nisl. Ut arcu enim, vulputate rutrum convallis eget, tristique non massa.
+                            Aliquam ac mollis nulla. Duis magna est, sodales vel tellus vehicula, euismod facilisis nisi. Pellentesque eu orci sagittis, porta ipsum a, eleifend tortor. 
+                            Duis est odio, volutpat eget consectetur eget, gravida eget libero.</span>
+                        </p>
+                </article>
+            </section>
+        </div> <!--koniec kontenerka-->
+
+
+        <div class="Stopka">
+            <p>Copyright © 2016</p>
+        </div>
+
+    </body>
+
+
+
+</html>
