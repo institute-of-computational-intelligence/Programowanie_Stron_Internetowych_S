@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: row wrap;
+    background: gray;
+    margin:0;
+}
+header,nav,main,footer{
+    border: 1px solid black;
+}
+header{
+    flex-grow: 1;
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+}
+nav,main{
+    height: fit-content;
+    height: 80vh;
+}
+main{
+    flex-grow: 4;
+    background-color: blue;
+}
+nav{
+    flex-grow: 1;
+    background-color: green;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: yellow;
+}
+.card{
+    
+}
+
+
