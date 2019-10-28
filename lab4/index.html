@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lab 4</title>
+  
+</head>
+
+<body>
+
+    <div>
+        Wylosowano liczbe z przedziału od 1 do 10.
+
+        <input type="text" id="guessValue">
+        <button id="guess">Zgadnij</button>
+    </div>
+
+  <script>
+      // zadanie 1
+      var guessButton = document.getElementById("guess");
+      var randomNumber = Math.floor((Math.random() * 10) + 1);
+
+      guessButton.addEventListener("click", event => {
+
+        var guessValue = document.getElementById("guessValue").value;
+
+        if(parseInt(guessValue) === randomNumber) {
+            alert("Gratulacje!");
+            randomNumber = Math.floor((Math.random() * 10) + 1);
+        }
+        else {
+            alert("Spróbuj ponownie!");
+        }
+      })
+      
+
+      console.log(random);
+
+  </script>
+</body>
+</html>
