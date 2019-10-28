@@ -112,9 +112,6 @@
       }
 
       // zadanie 4
-      var n = 5;
-      var a = 2;
-
       function exp(a, n) {
           var wynik = 1;
 
@@ -128,6 +125,29 @@
       console.log(exp(2,2));
       console.log(exp(2,4));
       console.log(exp(3,5));
+
+
+      // zadanie 5
+      function silnia(num) {
+          var wynik = 1;
+
+          var liczba = parseInt(num);
+          
+          var copyLiczba = liczba;
+
+          for(var i = 0; i < liczba; i++) {
+              wynik = wynik * copyLiczba;
+              
+              copyLiczba = copyLiczba-1;
+              
+          }
+
+          return wynik;
+      }
+
+      console.log(silnia(5));
+      console.log(silnia(1));
+      console.log(silnia(0));
 
 
   </script>
