@@ -10,11 +10,30 @@
 
 <body>
 
+     <!-- zadanie 1-->
     <div>
         Wylosowano liczbe z przedziału od 1 do 10.
 
         <input type="text" id="guessValue">
         <button id="guess">Zgadnij</button>
+    </div>
+
+    <!-- zadanie 2-->
+    <div style="margin-top:50px;">
+        <label for="first">Liczba 1:</label>
+        <input type="text" id="first">
+
+        <label for="second">Liczba 2:</label>
+        <input type="text" id="second">
+
+        <div>
+            <button id="multiply">Mnożenie</button>
+            <button id="divide">Dzielenie</button>
+        </div>
+
+        <div>
+            <p>Wynik: <span id="result"></span></p>
+        </div>
     </div>
 
   <script>
@@ -33,11 +52,32 @@
         else {
             alert("Spróbuj ponownie!");
         }
-      })
-      
+      });
 
-      console.log(random);
 
+      // zadanie 2
+      var first = document.getElementById("first");
+      var second = document.getElementById("second");
+
+      var result = document.getElementById("result");
+
+      document.getElementById("multiply").addEventListener("click", event => {
+          
+        var firstNumber = parseInt(first.value);
+        var secondNumber = parseInt(second.value);
+        
+        result.innerHTML = firstNumber*secondNumber;
+        
+      });
+
+      document.getElementById("divide").addEventListener("click", event => {
+          
+          var firstNumber = parseInt(first.value);
+          var secondNumber = parseInt(second.value);
+          
+          result.innerHTML = firstNumber/secondNumber;
+          
+        });
   </script>
 </body>
 </html>
