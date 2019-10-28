@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,193 @@
     <title>Document</title>
 
     <style>
-        .question {
-            margin: 50px;
-            padding: 50px;
-            border: 1px dashed black;
+        * {
+            box-sizing: border-box;
+            margin: 0;
         }
 
-        .question div {
-            display: block;
-            margin: 15px;
+        header {
+            background-color: rgba(14, 56, 196, 0.884);
+            color: white;
+            padding: 35px;
+            font-size: 42px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .flex {
+            display: flex;
+            flex-shrink: 1;
+        }
+
+        .menu {
+            background-color: rgb(209, 209, 209);
+            flex: 1 0 auto;
+        }
+
+        .menu>ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu>ul>li {
+            padding: 15px;
+            font-size: 22px;
+        }
+
+        .menu>ul>li:not(.active):hover {
+            background-color: rgba(84, 164, 218, 0.486);
+            color: white;
+            cursor: pointer;
+        }
+
+        li.active {
+            font-weight: 1000;
+            font-size: 24px;
+        }
+
+        .content {
+            background-color: rgba(84, 164, 218, 0.486);
+            flex: 8 0 auto;
+            flex-shrink: 1;
+        }
+
+        footer {
+            background-color: rgba(14, 56, 196, 0.884);
+            color: white;
+            padding: 15px;
+            font-size: 32px;
+        }
+
+        footer>p {
+            text-align: right;
+            margin-right: 40px;
+        }
+
+        article {
+            border: 1px solid black;
+            position: relative;
+            margin-left: 30px;
+            margin-top: 90px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .content article .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            font-size: 20px;
+        }
+
+        .content article .header div span {
+            font-weight: 1000;
+        }
+
+        .content article .body {
+            padding: 30px;
+            font-size: 30px;
+        }
+
+        .content article .read-more {
+            padding: 20px;
+            width: 20%;
+            background-color: rgba(14, 56, 196, 0.884);
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .content article .read-more a {
+            color: white;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: 1000;
+        }
+
+        .content article .title {
+            padding: 20px;
+            background-color: rgba(14, 56, 196, 0.884);
+            font-size: 22px;
+            color: white;
+            font-weight: 1000;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 20%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            position: absolute;
+            top: -67px;
+            left: -1px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div class="question">
-        <input type="text" id="randomInput" />
-        <p id="randomOutput"></p>
+    <header>
+        Strona przedmiotu PSI
+    </header>
+    <div class="flex">
+        <section class="menu">
+            <ul>
+                <li class="active">Menu</li>
+                <li>Strona główna</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ul>
+        </section>
+        <section class="content">
+            <article>
+                <div class="title">
+                    News numer 1
+                </div>
+                <div class="header">
+                    <div><span>Author</span>: MZ</div>
+                    <div><span>Data</span>: 23.10.2016</div>
+                </div>
+                <div class="body">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.
+                </div>
+                <div class="read-more">
+                    <a href="#">czytaj dalej</a>
+                </div>
+            </article>
+
+            <article>
+                <div class="title">
+                    News numer 2
+                </div>
+                <div class="header">
+                    <div><span>Author</span>: MZ</div>
+                    <div><span>Data</span>: 23.10.2016</div>
+                </div>
+                <div class="body">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.
+                </div>
+                <div class="read-more">
+                    <a href="#">czytaj dalej</a>
+                </div>
+            </article>
+        </section>
     </div>
-    <div class="question">
-        <div>
-            <label for="mathInput1">1st Number:</label>
-            <input type="text" id="mathInput1" />
-        </div>
-        <div>
-            <label for="mathInput2">2nd Number:</label>
-            <input type="text" id="mathInput2" />
-        </div>
-        <div>
-            <button type="button" id="mathBtn1">Multiply</button>
-            <button type="button" id="mathBtn2">Divide</button>
-        </div>
-        <div>
-            <p>The result is:</p>
-        </div>
-        <div>
-            <p id="mathOutput"></p>
-        </div>
-    </div>
-    <div class="question">
-        <div>
-            <input type="text" id="tempInput" />
-        </div>
-        <div>
-            <button type="button" id="temp1">Celsius</button>
-            <button type="button" id="temp2">Fahrenheit</button>
-        </div>
-        <div>
-            <p id="tempOutput"></p>
-        </div>
-    </div>
-    <div class="question">
-        <div>
-            <input type="text" id="quadratInput1" value=0 />
-            <input type="text" id="quadratInput2" value=0 />
-        </div>
-        <div>
-            <p id="quadratOutput"></p>
-        </div>
-    </div>
-    <div class="question">
-        <div>
-            <input type="text" id="factorialInput" />
-        </div>
-        <div>
-            <p id="factorialOutput"></p>
-        </div>
-    </div>
-    <script src="./main.js"></script>
+    <footer>
+        <p>Copyright &#9400; 2016</p>
+    </footer>
 </body>
+
 </html>

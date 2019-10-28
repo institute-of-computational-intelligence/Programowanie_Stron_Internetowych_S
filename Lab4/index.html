@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .question {
+            margin: 50px;
+            padding: 50px;
+            border: 1px dashed black;
+        }
+
+        .question div {
+            display: block;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="question">
+        <input type="text" id="randomInput" />
+        <p id="randomOutput"></p>
+    </div>
+    <div class="question">
+        <div>
+            <label for="mathInput1">1st Number:</label>
+            <input type="text" id="mathInput1" />
+        </div>
+        <div>
+            <label for="mathInput2">2nd Number:</label>
+            <input type="text" id="mathInput2" />
+        </div>
+        <div>
+            <button type="button" id="mathBtn1">Multiply</button>
+            <button type="button" id="mathBtn2">Divide</button>
+        </div>
+        <div>
+            <p>The result is:</p>
+        </div>
+        <div>
+            <p id="mathOutput"></p>
+        </div>
+    </div>
+    <div class="question">
+        <div>
+            <input type="text" id="tempInput" />
+        </div>
+        <div>
+            <button type="button" id="temp1">Celsius</button>
+            <button type="button" id="temp2">Fahrenheit</button>
+        </div>
+        <div>
+            <p id="tempOutput"></p>
+        </div>
+    </div>
+    <div class="question">
+        <div>
+            <input type="text" id="quadratInput1" value=0 />
+            <input type="text" id="quadratInput2" value=0 />
+        </div>
+        <div>
+            <p id="quadratOutput"></p>
+        </div>
+    </div>
+    <div class="question">
+        <div>
+            <input type="text" id="factorialInput" />
+        </div>
+        <div>
+            <p id="factorialOutput"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
