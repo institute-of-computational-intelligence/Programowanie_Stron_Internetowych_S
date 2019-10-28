@@ -1,0 +1,52 @@
+header{
+    background: rgb(81, 130, 236);
+    width: 100%;
+    height: 100px;
+    color:white;
+    text-align: center;
+   
+}
+section{
+    background:  rgb(141, 168, 224);
+    width: 15%;
+    height: 100%;
+    float: left;
+    margin:0px;
+    position: relative;
+}
+aside{
+    background:  rgb(191, 208, 245);
+    width: 85%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+a.przycisk{
+    float:left;
+    cursor: pointer;
+    border:1px solid #2f7ea7;
+    color:white;
+    background: #2f7ea7;
+    
+
+}
+aside{
+    border: 1px solid black;
+}
+
+aside :nth-child(1){
+    text-align: left;
+    width: 50%;
+}
+aside :nth-child(2){
+    text-align: right;
+}
+
+footer{
+    background: rgb(85, 82, 214);
+    width: 100%;
+    height: 30%;
+    clear: both;
+    text-align: right;
+    color:white;
+}
