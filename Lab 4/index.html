@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>PSI</title>
+    </head>
+    <body>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Zgadnij liczbę od 1 do 10: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+        </form>
+        <br><br>
+        <form>
+            1st Number: <input type="text" id="first"><br>
+            2nd Number: <input type="text" id="second"><br>
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+            <input type="button" onClick="divideBy()" Value="Divide" />
+        </form>
+        <p>The Result is : <br>
+        <span id = "result"></span>
+        <form>
+            Celcjusze: <input type="text" id="cel"><br>
+            <input type="button" onClick="CtoF()" Value="Fahrenhity" />
+        </form>
+        <p>Temperatura w Fahrenheitach: 
+        <span id = "result2"></span>
+        <form>
+            a: <input type="text" id="a"><br>
+            n: <input type="text" id="n"><br>
+            <input type="button" onClick="adon()" Value="a do n" />
+        </form>
+        <p>a^n: 
+        <span id = "result3"></span>
+        <form>
+            a: <input type="text" id="b"><br>
+            <input type="button" onClick="silnia()" Value="Silnia" />
+        </form>
+        <p>a!: 
+        <span id = "result4"></span>
+    </body>
+    <script src="./scripts.js"></script>
+</html>
