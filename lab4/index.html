@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+<meta charset=utf-8 />
+<title>Guess a number and pomnoz and odejmi</title>
+<style type="text/css">
+    body {margin: 30px;}
+    </style> 
+</head>
+<body>
+    <p>ZGADNIJ NUMEREK </p>
+    <script>
+    const numer=Math.ceil(Math.random() * 10);
+    console.log(numer);
+    const gnumer=prompt('Zgadnij numer od 1 do 10');
+    if(numer==gnumer)
+    document.write('Zgadles');
+    else
+    document.write('Nie zgadles, wylosowany numer to '+numer);
+
+    function multiplyBy(){
+        num1=document.getElementById("numerFirst").value;
+        num2=document.getElementById("numerTwo").value;
+        document.getElementById("wynik").innerHTML=num1*num2;
+
+    }
+    function divideBy(){
+        num1=document.getElementById("numerFirst").value;
+        num2=document.getElementById("numerTwo").value;
+        document.getElementById("wynik").innerHTML=num1/num2;
+        
+    }
+
+    function add(){
+        num1=document.getElementById("numerFirst").value;
+        num2=document.getElementById("numerTwo").value;
+        document.getElementById("wynik").innerHTML=num1+num2;
+        
+    }
+
+    function substract(){
+        num1=document.getElementById("numerFirst").value;
+        num2=document.getElementById("numerTwo").value;
+        document.getElementById("wynik").innerHTML=num1-num2;
+        
+    }
+    
+    function Farenik(){
+        celnum=document.getElementById("cel").value;
+        farnum=document.getElementById("faren").value;
+        wynior=(5/9) * (farnum-32);
+        document.getElementById("conv").innerHTML=wynior+" stopni Celsjusza";
+        
+    }
+    function  Celcik(){
+        celnum=document.getElementById("cel").value;
+        farnum=document.getElementById("faren").value;
+        wynior=(celnum*1.8)+32;
+        document.getElementById("conv").innerHTML=wynior+" stopni Farena";
+        
+    }
+    function  Potega(){
+        a=document.getElementById("a").value;
+        n=document.getElementById("n").value;
+        wynior=Math.pow(a,n);
+        document.getElementById("an").innerHTML=wynior;
+        
+    }
+//     function  Silnia(int n){
+//         a=document.getElementById("silnia").value;
+     
+//     if (a==0)
+//     document.getElementById("licz!").innerHTML=1;
+//     else
+//     document.getElementById("licz!").innerHTML= (a*silnia_rekurencyjna(a-1));
+// }
+        
+        
+    
+ </script>
+<form>
+   
+    Numer 1: <input type="text" id="numerFirst"/><br>
+    Numer 2: <input type="text" id="numerTwo"/><br>
+    <input type="button" onclick="multiplyBy()" Value="Pomnoz"/>
+    <input type="button" onclick="divideBy()" Value="Podziel"/>
+    <input type="button" onclick="add()" Value="Dodaj"/>
+    <input type="button" onclick="substract()" Value="Odejmi"/>
+</form>
+<p>Wynik:
+<span id="wynik"></span>
+</p>
+  
+<p>Konwertowanie temperatury</p>
+Celsius: <input type="text" id="cel"/><br>
+Farenhajt: <input type="text" id="faren"/><br>
+<input type="button"  onclick="Celcik()" Value="C -> F"/>
+<input type="button"  onclick="Farenik()" Value="F -> C"/>
+<p>Po konwersji:
+        <span id="conv"></span>
+        </p>
+
+        Liczba: <input type="text" id="a"/><br>
+        Potega: <input type="text" id="n"/><br>
+        <input type="button" onclick="Potega()" Value="Oblicz"/>
+    <p>Wynik:
+        <span id="an"></span></p>
+
+        Liczba: <input type="text" id="silnia"/><br>
+
+        <input type="button" onclick="Silnia()" Value="Oblicz"/>
+    <p>Wynik:
+        <span id="licz!"></span></p>
+        
+        
+</body>
+</html>
