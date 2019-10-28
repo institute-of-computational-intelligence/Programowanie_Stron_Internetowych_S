@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4</title>
+    <meta name="description" content="Nie wiem jeszcze">
+    <meta name="keywords" content="lab4,fajnie,nie_wiem">
+    <meta name="author" content="Damian Tamioła">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        
+        <h1>Strona przedmiotu PSI</h1>
+    </div>
+    <div class="main">
+        <div class="side-menu">
+            <h1>Menu</h1>
+            <a target="iframe1" href="main.html"><p>Niepotrzebne</p></a>
+        </div>
+
+        <div class="side-content">
+            <div class="inputs">
+            <p style="display:inline">1. </p>
+            <input id="liczba" type="text" placeholder="Wpisz zgadywaną liczbę">
+            <button onClick="check()">Sprawdź</button>
+            <p style="display:inline" id="result">Wynik</p>
+            <input id="liczbaLepiej" onInput="checkLepiej()" type="text" placeholder="Zgadnij liczbę">
+            <br>
+
+            <p style="display:inline">2. </p>
+            <input id="pierwszaLiczba" type="text" placeholder="Wpisz pierwszą liczbę">
+            <input id="drugaLiczba" type="text" placeholder="Wpisz drugą liczbę">
+            <button onClick="multiply()">Pomnóż</button>
+            <button onClick="divide()">Podziel</button>
+            <p style="display:inline" id="mathresult">0</p>
+            <br>
+
+            <p style="display:inline">3. </p>
+            <input id="degrees" type="text" placeholder="Wpisz stopnie C">
+            <button onClick="degreesToC()">Przelicz na °C</button>
+            <button onClick="degreesToF()">Przelicz na °F</button>
+            <p style="display:inline" id="degreesresult">0</p>
+            <br>
+
+            <p style="display:inline">4. </p>
+            <input id="matha" type="text" placeholder="Wpisz a">
+            <input id="mathn" type="text" placeholder="Wpisz n">
+            <button onClick="power()">Oblicz a^n</button>
+            <p style="display:inline" id="mathresult2">0</p>
+            <br>
+
+            <p style="display:inline">5. </p>
+            <input id="mathfact" type="text" placeholder="Wpisz a">
+            <button onClick="factorial()">Oblicz a!</button>
+            <p style="display:inline" id="mathresult3">0</p>
+            <br>
+
+            <p style="display:inline">6.</p>
+            <button onClick="sortuj()">Sortuj t</button>
+            <p style="display:inline" id="sortresult">t=[3, 5, 1, 7, 2]</p>
+            <br>
+        </div>
+        </div>
+            <script>
+                random=Math.floor(Math.random() * 10)+1;
+
+                function x(id) {
+                    return document.getElementById(id);
+                }
+
+                function check() {
+                    a = x("liczba").value;
+                    if (a==random) {
+                        x("result").innerHTML="Dobrze";
+                    }
+                    else x("result").innerHTML="Źle";
+                }
+
+                function checkLepiej() {
+                    a = x("liczbaLepiej").value;
+                    if (a==random) {
+                        x("liczbaLepiej").style.color="#0D0";
+                    }
+                    else x("liczbaLepiej").style.color="#D00";
+                }
+
+                function multiply() {
+                    a = x("pierwszaLiczba").value;
+                    b = x("drugaLiczba").value;
+                    x("mathresult").innerHTML=a*b;
+                }
+
+                function divide() {
+                    a = x("pierwszaLiczba").value;
+                    b = x("drugaLiczba").value;
+                    x("mathresult").innerHTML=a/b;
+                }
+
+                function degreesToC() {
+                    a = x("degrees").value;
+                    x("degreesresult").innerHTML=(5/9)*(a-32)+"°C";
+                }
+
+                function degreesToF() {
+                    a = x("degrees").value;
+                    x("degreesresult").innerHTML=a*(9/5)+32+"°F";
+                }
+
+                function power() {
+                    a = x("matha").value;
+                    n = x("mathn").value;
+                    x("mathresult2").innerHTML=Math.pow(a,n);
+                }
+
+                function factorial() {
+                    a = x("mathfact").value;
+                    result = 1;
+                    for(i=a;i>0;i--) {
+                        result*=i;
+                    }
+                    x("mathresult3").innerHTML=result;
+                }
+
+                function sortuj() {
+                    t=[3,5,1,7,2];
+                    n=5;
+                    do {
+                        for (i=0;i<n-1;i++) {
+                            if (t[i] > t[i+1]){ [t[i], t[i+1]] = [t[i+1], t[i]];}
+                        }
+                        n--;
+                    }while (n>1);
+                    n=5;
+                    x("sortresult").innerHTML="t=[";
+                    for (i=0;i<n;i++) {
+                        x("sortresult").innerHTML+=t[i]+", ";
+                    }
+                    x("sortresult").innerHTML+="]";
+                }
+
+            </script>
+        </div>
+    <div class="footer"><p>Copyright 2019®</p></div>
+</body>
+</html>
