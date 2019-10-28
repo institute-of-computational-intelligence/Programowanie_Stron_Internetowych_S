@@ -149,6 +149,31 @@
       console.log(silnia(1));
       console.log(silnia(0));
 
+      // zadanie 6
+      var arr1 = [3,8,7,6,5,-4,3,2,1];
+
+      function insertionSort(arr) {
+
+          var len = arr.length;
+
+          for(var i = 0; i < len; i++) {
+              var el = arr[i];
+              var j;
+
+              for(j = i - 1; j >= 0 && arr[j] > el; j--){
+                  arr[j+1] = arr[j];
+              }
+              arr[j+1] = el;
+          }
+
+          return arr;
+
+      }
+
+      console.log(insertionSort(arr1));
+
+      
+
 
   </script>
 </body>
