@@ -1,0 +1,55 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <article>
+            <header>Działania matematyczne</header>
+            <input id="input1"/>
+            <input id="input2"/>
+            <span>Wynik: </span>
+            <span id="output"></span>
+            <br>
+            <button onclick="Add();">Add</button>
+            <button onclick="Sub();">Sub</button>
+            <button onclick="Divide();">Divide</button>
+            <button onclick="Multiply();">Multiply</button>
+        </article>
+
+        <br>
+
+        <article>
+            <header>Stopnie tempertatury</header>
+            <a>Stopnie Celsiusza</a>
+            <input id="stopnieC"/>
+            <a>Stopnie Fahrenheita: </a>
+            <a id="stopnieF"></a>
+            <br><br>
+            <a>Stopnie Fahrenheita</a>
+            <input id="stopnieF2"/>
+            <a>Stopnie Celsiusza: </a>
+            <a id="stopnieC2"></a>
+        </article>
+
+        <br>
+
+        <article>
+            <header>Potegi</header>
+            <input id="a"/>
+            <input id="n"/>
+            <span id="wynik"></span>
+            <button onclick="exp();" >Oblicz</button>
+        </article>
+
+        <br>
+
+        <article>
+            <header>Silnia</header>
+            <input id="silnia"/>
+            <span id="wynikSilnia"></span>
+            <button onclick="silnia(parseInt(document.getElementById("silnia").value););" >Oblicz</button>
+        </article>
+
+            <script src="script.js"></script>
+    </body>
+</html>
