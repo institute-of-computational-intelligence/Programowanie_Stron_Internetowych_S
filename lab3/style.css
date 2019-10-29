@@ -8,8 +8,11 @@ header{
     color: white;
     background: rgba(29, 63, 175, 0.945);
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     Height: 5em;
+    width: 100%;
 }
 
 .div1{
@@ -18,11 +21,52 @@ header{
 
 nav{
     width: 15%;
-    background: rgb(87, 118, 165);
+    background: rgb(119, 154, 206);
+    padding: 20px;
+    display: block;
+    font-size: large;
+
+
+}
+
+#more{
+    display: none;
 }
 
 main{
     width: 85%;
+    height: 47.14em;
+    padding-left: 2%; 
+    padding-right: 2%; 
+    padding-bottom: 2%; 
+    background:rgb(227, 247, 253);
+}
+
+.autor{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.data{
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.artykul{
+    margin-top: 30px;
+    padding: 10px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+button{
+    background: rgba(29, 63, 175, 0.945);
+    color: white;
+    margin-left: 43%;
+    width: 140px;
+    height: 35px;
 }
 
 .div2{
@@ -41,7 +85,12 @@ section h1{
     border-top-right-radius: 10px;
     background: rgba(29, 63, 175, 0.945);
     width: 10%;
+    height: 40px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 footer{
@@ -50,14 +99,12 @@ footer{
     justify-content: flex-end;
     padding:20px;
     color: white;
+    height: 1em;
 }
 
 .aktywna_strona{
     background:rgba(29, 63, 175, 0.945);
     color: white;
-}
-main{
-    background:rgb(205, 243, 255);
 }
 
 a{
@@ -67,4 +114,8 @@ a{
 ul{
     list-style-type: none;
     color: black;
+}
+
+article{
+    font-size: 1.5em;
 }
