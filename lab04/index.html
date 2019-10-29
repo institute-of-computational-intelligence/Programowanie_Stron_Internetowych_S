@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Strona</title>
+    <meta name="description" content="Strona testowa">
+    <meta name="keywords" content="HTML, test, strona">
+    <meta name="author" content="Dawid Jonienc">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="skrypt.js"></script>
+</head>
+<body>
+    <h2>ZAD 1</h2>
+    <p id="nr1"></p>
+    <p>Podaj liczbe: 
+        <input type="number" id="liczba" value="0"> 
+        <input type="button" value="Sprawdz" onclick="testliczba()"> 
+    </p>
+
+
+    <h2>ZAD 2</h2>
+    <form>
+        <p>
+            <p>1 liczba:   <input type="number" id="liczba1" value="0"></p>
+            <p>2 liczba:   <input type="number" id="liczba2" value="0"></p>
+            <p>
+                <input type="button" value="Mnoz" onclick="mnoz()">
+                <input type="button" value="Dziel" onclick="dziel()">
+            </p>
+        </p>
+    </form>
+    <p id="wynik"></p>
+
+    <h2>ZAD 3</h2>
+    <p>Wpisz wartosc temperatury: <input type="number" id="temp" value="21"> </p>
+    <p>
+        <input type="button" value="z F na C" onclick="naC()">
+        <input type="button" value="z C na F" onclick="naF()">
+    </p>
+    <p id="tempwy"></p>
+    
+    <h2>ZAD 4</h2>
+    <p> a ^ n</p>
+    <p>
+        a: <input type="number" id="a" value="2"> <br>
+        ^n: <input type="number" id="n" value="2"> 
+    </p>
+    <p> <input type="button" value="oblicz!" onclick="potega()"> </p>
+    <p id="potegawynik"></p>
+
+    <h2>ZAD 5</h2>
+    <p>n!</p>
+    <p> 
+        Podaj n: <input type="number" id="silnia" value="2"> 
+        <input type="button" value="Silnia z n" onclick="silnia()">
+    </p>
+    <p id="wyniksilnia"></p>
+
+    <h2>ZAD 6</h2>
+    
+
+</body>
+</html>
