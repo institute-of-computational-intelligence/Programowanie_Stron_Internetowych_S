@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lab 5</title>
+  <meta name="author" content="Mateusz Wilk">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+    <p id="paragraf">Tekst 123</p>
+    <button id="zmienStyle">Zmień style</button>
+
+  <script>
+    var paragraf = document.getElementById("paragraf");
+
+
+    document.getElementById("zmienStyle").addEventListener('click', event => {
+        paragraf.style.fontSize="26px";
+        paragraf.style.color="red";
+        paragraf.style.fontFamily="Verdana";
+    });
+
+  </script>
+</body>
+</html>
