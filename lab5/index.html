@@ -26,6 +26,24 @@
 
     </div>
 
+    <!-- zadanie 3 -->
+    <div style="margin-top:100px;">
+        <ul id="list">
+            <li id="first"><a href="#">Element 1</a></li>
+            <li><a href="#">Element 2</a></li>
+            <li><a href="#">Element 3</a></li>
+        </ul>
+        <div>
+            <label for="adres">Adres:</label>
+            <input type="text" id="adres">
+            <label for="text">Tekst:</label>
+            <input type="text" id="text">
+            <button id="addToList">Dodaj do listy</button>
+        </div>
+      
+    </div>
+
+
   <script>
 
     // zadanie 1
@@ -47,7 +65,22 @@
     });
 
     // zadanie 3
-    
+    var list = document.getElementById("list");
+
+    document.getElementById("addToList").addEventListener('click', event => {
+
+        var textValue = document.getElementById("text").value;
+        var adresValue = document.getElementById("adres").value;
+
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = adresValue;
+        var node = document.createTextNode(textValue);
+        a.appendChild(node);
+        li.appendChild(a);
+
+        list.insertBefore(li, list.firstChild);
+    });
 
   </script>
 </body>
