@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body > div {
+            padding: 20px;
+            margin: 10px;
+            border: 5px solid black;
+        }
+
+        .btns-zad5 > a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="1">
+            <p id='p-zad1'>Zadanie Pierwsze</p>
+            <button id="zad1">Uruchom</button>
+    </div>
+
+    <div id="2">
+        <img id='img-zad2' src="https://image.shutterstock.com/image-photo/colorful-flower-on-dark-tropical-260nw-721703848.jpg"></img>
+        <input type="text" id="inp-src">
+        <button id='zad2'> Uruchom </button>
+    </div>
+
+    <div id="3">
+        <ul id="list-zad3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <input type="text" name="" id="text-zad3">
+        <input type="text" id="ref-zad3">
+        <button id="zad3">Uruchom</button>
+    </div>
+
+    <div id="4">
+        <div id="box-zad4">Dowolny tekst</div>
+        <div id="copy-zad4"></div>
+    </div>
+
+    <div id="5">
+        <nav id="nav-zad5">
+            <button class='btns-zad5'><a href="http://www.google.com">Google</a></button>
+            <button class='btns-zad5'><a href="http://www.twitter.com">Twitter</a></button>
+            <button class='btns-zad5'>YouTube</button>
+        </nav>
+    </div>
+    <script>
+        //Zad1
+        const pzad1 = document.querySelector('p#p-zad1')
+        const btnZad1 = document.querySelector('button#zad1')
+
+        btnZad1.onclick = () => {
+            pzad1.style.font = 'italic 16px Verdana'
+            pzad1.style.color = 'red'
+        }
+
+        //Zad2
+        const imgZad2 = document.querySelector('img#img-zad2')
+        const inputZad2 = document.querySelector('input#inp-src')
+        const btnZad2 = document.querySelector('button#zad2')
+
+        btnZad2.onclick = () => {
+            imgZad2.src = inputZad2.value
+        }
+        
+        //Zad3
+        const listZad3 = document.querySelector('ul#list-zad3')
+        const inputTextZad3 = document.querySelector('input#text-zad3')
+        const inputRefZad3 = document.querySelector('input#ref-zad3')
+        const btnZad3 = document.querySelector('button#zad3')
+
+        btnZad3.onclick = () => {
+            let newLi = `<li><a href='${inputRefZad3.value}'>${inputTextZad3.value}</a></li>`
+            let listVal = newLi + listZad3.innerHTML
+            listZad3.innerHTML = listVal
+        }
+
+        //Zad4
+        const boxZad4 = document.querySelector('div#box-zad4')
+        const copyZad4 = document.querySelector('div#copy-zad4')
+
+        let zad4Text = boxZad4.innerHTML
+
+        boxZad4.onmouseenter = () => {
+            boxZad4.innerHTML = new Date()
+        }
+        boxZad4.onmouseleave = () => {
+            boxZad4.innerHTML = zad4Text
+        }
+        boxZad4.onclick = () => {
+            copyZad4.innerHTML = boxZad4.innerHTML
+        }
+        
+        //Zad5
+        const btnsZad5 = document.querySelectorAll('button.btns-zad5')
+        
+        let boldVal = btnsZad5[0].style.fontWeight
+        let bgColor = btnsZad5[0].style.backgroundColor
+        
+        for(let i = 0; i < btnsZad5.length; i++){
+            btnsZad5[i].onmousedown = () => {
+
+                btnsZad5[i].style.fontWeight = '600'
+                btnsZad5[i].style.backgroundColor = 'gray'
+            }
+            btnsZad5[i].onmouseup = () => {
+                btnsZad5[i].style.fontWeight = boldVal
+                btnsZad5[i].style.backgroundColor = bgColor
+            }
+            btnsZad5[i].onmouseleave = () => {
+                btnsZad5[i].style.fontWeight = boldVal
+                btnsZad5[i].style.backgroundColor = bgColor
+            }
+        }
+    </script>
+</body>
+</html>
