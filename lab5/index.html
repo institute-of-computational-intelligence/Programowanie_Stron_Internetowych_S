@@ -7,16 +7,28 @@
   <title>Lab 5</title>
   <meta name="author" content="Mateusz Wilk">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
 </head>
 
 <body>
 
+    <!-- zadanie 1 -->
     <p id="paragraf">Tekst 123</p>
     <button id="zmienStyle">Zmień style</button>
 
+    <!-- zadanie 2 -->
+    <div style="margin-top:100px;">
+        <img src="https://www.w3schools.com/w3css/img_lights.jpg" id="imgReplace" alt="obrazek">
+        <div>
+            <label for="newImgUrl">Nowy URL:</label>
+            <input type="url" id="newImgUrl">
+            <button id="changeImg">Zmień</button>
+        </div>
+
+    </div>
+
   <script>
+
+    // zadanie 1
     var paragraf = document.getElementById("paragraf");
 
 
@@ -25,6 +37,17 @@
         paragraf.style.color="red";
         paragraf.style.fontFamily="Verdana";
     });
+
+    // zadanie 2
+    document.getElementById("changeImg").addEventListener('click', event => {
+        var newImgUrl = document.getElementById("newImgUrl").value;
+        if(newImgUrl.length > 0) {
+            document.getElementById("imgReplace").src=newImgUrl;
+        }
+    });
+
+    // zadanie 3
+    
 
   </script>
 </body>
