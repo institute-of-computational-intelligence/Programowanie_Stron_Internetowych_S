@@ -51,6 +51,15 @@
     </div>
 
 
+    <!-- zadanie 5 -->
+    <div style="margin-top:100px;">
+        <ul id="menu">
+            <li><a href="index.html#odnosnik1">Odnosnik 1</a></li>
+            <li><a href="index.html#odnosnik2">Odnosnik 2</a></li>
+            <li><a href="index.html#odnosnik3">Odnosnik 3</a></li>        
+        </ul>
+    </div>
+
   <script>
 
     // zadanie 1
@@ -110,6 +119,22 @@
         data.innerHTML = oldValue;
     });
 
+    // zadanie 5
+   
+    
+        var menuLi = document.querySelectorAll("#menu li");
+  
+
+        for(var i = 0; i < menuLi.length; i++) {
+            menuLi[i].querySelector('a').addEventListener('mouseenter', function(){
+                this.style.background="lightcoral";
+                this.style.fontWeight="bold";
+            });
+            menuLi[i].querySelector('a').addEventListener('mouseleave', function(){
+                this.style.background="transparent";
+                this.style.fontWeight="normal";
+            });
+        }
 
   </script>
 </body>
