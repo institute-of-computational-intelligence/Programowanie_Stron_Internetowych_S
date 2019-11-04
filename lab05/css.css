@@ -1,0 +1,12 @@
+#nawigacja{
+    width: 150px;
+    background-color: blue;
+}
+
+ul{
+    list-style: none;
+}
+
+li:hover{
+    background-color: red;
+}
