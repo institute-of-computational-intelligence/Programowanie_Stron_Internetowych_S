@@ -39,7 +39,6 @@ document.body.onload = ()=>
     });
 
     var buttons5 = Array.from(document.getElementsByClassName("button5"));
-    console.log(buttons5);
     buttons5.forEach(elem=>elem.addEventListener("click",(e)=>
     {
         buttons5.forEach(elem1=>
