@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>LAB2</title>
+</head>
+
+<body>
+<p id="paragraf">Tekstowo heheheszlo</p>
+<p id="paragraf2">Tekstowo heheheszlo</p>
+
+<script>
+        document.getElementById("paragraf").style.color = "blue";
+        document.getElementById("paragraf").style.fontFamily = "Arial";
+        document.getElementById("paragraf").style.fontSize = "larger";
+
+        function kolorek()
+        {
+            a=document.getElementById("kol").value;
+            b=document.getElementById('id2').style.color=a;
+            
+        }
+        function czcionka()
+        {
+            a=document.getElementById("czio").value;
+            b=document.getElementById('id2').style.fontFamily=a;
+            
+        }
+        function rozmiar()
+        {
+            a=document.getElementById("numer").value;
+            b=document.getElementById('id2').style.fontSize=a;
+            
+        }
+        function kaczus()
+        {
+            misz=document.getElementById("mis").value;
+
+            a=document.getElementById("obrazek").src=misz;
+            b=document.getElementById("obrazek").alt="mis";
+        }
+
+</script>
+
+<h1 id="id2">Moj Heding koloprowy</h1>
+<h1 id="id3">Moj Heding nie-koloprowy</h1>
+Kolor: <input type="text" id="kol"/><br>
+Czcionka: <input type="text" id="czio"/><br>
+Rozmiar: <input type="text" id="numer"/><br>
+
+<button type="button" onclick="kolorek()">Zmien kolor</button>
+<button type="button" onclick="czcionka()">Zmien czcionke</button>
+<button type="button" onclick="rozmiar()">Zmien rozmiar</button>
+<br>
+<p>Nasz Jacus:</p>
+<img id="obrazekorg" src="obrazy/gmoh.jpg" alt="jacus2">
+<br>
+<div>
+        <label for="mis">Wybierz naszego misia</label>
+        <select name="mis" id="mis">
+            <option value="-1">wybierz</option>
+            <option value="obrazy/stonoga.jpg">Stonoga</option>
+            <option value="obrazy/kaczynski.jpg">Kaczynski</option>
+            <option value="obrazy/gmoh.jpg">Gmoch</option>
+        </select>
+    </div>
+<button type="button" onclick="kaczus()">Zmien obrazek</button>
+
+<br>
+<p>Nowe zdjecie zmienione przez Jave:</p>
+<img id="obrazek" src="obrazy/gmoh.jpg" alt="jacus">
+
+
+</body>
+</html>
