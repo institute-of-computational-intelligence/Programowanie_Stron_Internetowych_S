@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 50px;
+    border: 1px dashed #000;
+    padding: 50px;
+}
+
+nav {
+    position: relative;
+    margin: 50px;
+}
+
+nav > ul {
+    margin: 0;
+    position: relative;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+nav > ul > li {
+    font-size: 24px;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 30px;
+}
+
+nav > ul > li > a:hover {
+    background-color: #00ff00;
+}
+
+nav > ul > li > a.active {
+    background-color: #0000ff;
+    font-weight: bold;
+}
+
+nav > ul > li.active > a {
+    font-size: inherit;
+}
