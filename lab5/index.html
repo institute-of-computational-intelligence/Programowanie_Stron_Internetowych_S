@@ -29,7 +29,7 @@
     <!-- zadanie 3 -->
     <div style="margin-top:100px;">
         <ul id="list">
-            <li id="first"><a href="#">Element 1</a></li>
+            <li><a href="#">Element 1</a></li>
             <li><a href="#">Element 2</a></li>
             <li><a href="#">Element 3</a></li>
         </ul>
@@ -41,6 +41,13 @@
             <button id="addToList">Dodaj do listy</button>
         </div>
       
+    </div>
+
+    <!-- zadanie 4 -->
+    <div style="margin-top:100px;">
+        <div id="data" style="padding:15px; background:lightcoral;">Tu będzie data</div>
+
+        <div id="copyData" style="margin-top:30px;"></div>
     </div>
 
 
@@ -81,6 +88,28 @@
 
         list.insertBefore(li, list.firstChild);
     });
+
+    // zadanie 4
+    var dataDiv = document.getElementById("data");
+
+    var oldValue;
+
+    dataDiv.addEventListener('mouseenter', event => {
+        oldValue = data.textContent;
+
+        data.innerHTML = new Date().toISOString().slice(0,10).replace(/-/g,"/");
+    });
+
+    
+    dataDiv.addEventListener('click', event => {
+        document.getElementById("copyData").innerHTML = new Date().toISOString().slice(0,10).replace(/-/g,"/");
+    });
+
+    dataDiv.addEventListener('mouseleave', event => {
+    
+        data.innerHTML = oldValue;
+    });
+
 
   </script>
 </body>
