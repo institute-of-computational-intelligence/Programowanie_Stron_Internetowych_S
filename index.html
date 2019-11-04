@@ -1,62 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="pl-PL">
-	<head>
-		<title>PSI</title>
-		<meta name="author" content="MZ">
-		<meta name="keywords" content="HTML,CSS">
-		<meta name="description" content="Strona PSI">
-		<link rel="stylesheet" type="text/css" href="theme.css">
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<div class="logo">
-			<img src="http://www.pcz.pl/sites/all/themes/pcz/images/logo.png" alt="logo PCz">
-		</div>
-		<div class="first">
-			<h1>Nagłówek 1</h1>
-			<p>
-				To jest przykładowy <span id="first_span">tekst...</span>
-			</p>
-			<p>
-				Oto nasz odnośnik: <a href="http://www.pcz.pl" target="_blank">link</a>
-			</p>
-		</div>
-		<div class="second">
-			<h1>Nagłówek 1</h1>
-			<p>
-				To jest przykładowy <span>tekst...</span>
-			</p>
-			<p>
-				Oto nasz odnośnik: <a href="http://www.pcz.pl" target="_blank">link</a>
-			</p>
-		</div>
-		<div class="last">
-			<h1 class="accordion">Nagłówek 1</h1>
-			<p>
-				To jest przykładowy <span id="last_span">tekst...</span>
-			<br><br>
-				Oto nasz odnośnik: <a href="http://www.pcz.pl" target="_blank">link</a>
-			</p>
-		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 
-
-<script>
-	var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-
-    this.classList.toggle("active");
-
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-	</body>
+    <title>Document</title>
+</head>
+<body>
+<button>Strona Główna</button>
+<button>Galeria</button>
+<button>Kontakt</button>
+</body>
+<script src="app.js"></script>
 </html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="one" onmouseover="showTime();" onmouseout="getBack();">
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <img id="obrazek" src="https://www.pcz.pl/sites/all/themes/pcz2016/img/logo.png">
+    <p>Ścieżka obrazu: </p><input id="img_url"></input>
+    <button id="load_img" onclick="goToPage();">Załaduj obrazek</button>
+</body>
+<script src="app.js"></script>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <button id="changetxt">Zmień tekst</button>
+</body>
+<script src="app.js"></script>
+</html>
+-->
