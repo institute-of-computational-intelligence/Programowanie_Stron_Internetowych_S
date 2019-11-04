@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4</title>
+    <meta name="description" content="Nie wiem jeszcze">
+    <meta name="keywords" content="lab5,fajnie,nie_wiem">
+    <meta name="author" content="Damian Tamioła">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        
+        <h1>Strona przedmiotu PSI</h1>
+    </div>
+    <div class="main">
+        <div class="side-menu">
+            <h1>Menu</h1>
+            <a class="huwno" href="#"><p>Odnośnik 1</p></a>
+            <a class="huwno" href="#"><p>Odnośnik 2</p></a>
+            <a class="huwno" href="#"><p>Odnośnik 3</p></a>
+            <a class="huwno" href="#"><p>Odnośnik 4</p></a>
+            <a class="huwno" href="#"><p>Odnośnik 5</p></a>
+        </div>
+
+        <div class="side-content">
+            <div class="side-content-box">
+                <p onClick="clickp1()">ZMIEŃ MNIE HEHE</p>
+
+                <img id="imgid" style="width:100%" src="https://www.heart.org/-/media/images/health-topics/congenital-heart-defects/50_1683_44a_asd.jpg?h=551&w=572&la=en&hash=60A4E57B316F13921A743143171BD2EFC7912F93">
+                <input id="imgurl" type="text">
+                <button onClick="clickimg1()">Zmień</button></br>
+                
+                <ul id="list1">
+                    <li>Dwa?</li>
+                    <li>Trzy</li>
+                    <li>Cztery</li>
+                </ul>
+                <input id="append1" type="text" placeholder="Wpisz tekst a">
+                <input id="append2" type="text" placeholder="Wpisz href a">
+                <button onClick="appenda()">Dodaj a</button></br>
+
+                <div>
+                    <p id="tentekst">Treść hehe</p>
+                    <p id="innytekst">Tu będzie zapisana data</p>
+                </div>
+            </div>
+        </div>
+        </div>
+            <script>
+                random=Math.floor(Math.random() * 10)+1;
+
+                function id(id) {
+                    return document.getElementById(id);
+                }
+
+                function clickp1() {
+                    event.srcElement.style.color="red";
+                    event.srcElement.style.fontSize="30px";
+                    event.srcElement.style.fontFamily="Verdana";
+                }
+
+                function clickimg1() {
+                    a = id("imgurl").value;
+                    id("imgid").src=a;
+                    console.log("siema");
+                }
+
+                function appenda() {
+                    var anode = document.createElement("li");
+                    var cathode = document.createElement("a");
+                    cathode.innerHTML=id("append1").value;
+                    cathode.href=id("append2").value;
+                    anode.appendChild(cathode);
+                    id("list1").insertBefore(anode,id("list1").childNodes[0]);
+                }
+
+                function hoverover(event) {
+                    data = new Date();
+                    event.srcElement.innerHTML = `${data.getDate()}-${data.getMonth()+1}-${data.getFullYear()}`;
+                }
+
+                function hoverOver(event) {
+                    text = "Treść hehe";
+                    event.srcElement.innerHTML = text;
+                }
+
+                function hoverDover(event) {
+                    id("innytekst").innerHTML=id("tentekst").innerHTML;
+                }
+
+                id("tentekst").addEventListener("mouseenter",hoverover);
+                id("tentekst").addEventListener("mouseleave",hoverOver);
+                id("tentekst").addEventListener("mouseup",hoverDover);
+
+                var guziki = Array.from(document.getElementsByClassName("huwno"));
+                guziki.forEach(juwno);
+                    
+                function juwno(elem)
+                {
+                    elem.addEventListener("mouseup",huwno);
+                }
+                    
+
+                function huwno(event) {
+                    guziki.forEach(ev=>
+                    {
+                        
+                        ev.style.fontWeight="normal";
+                        ev.style.background="none";
+                    });
+
+                    event.srcElement.style.fontWeight="bold";
+                    event.srcElement.style.backgroundColor="#666";
+                }
+
+            </script>
+        </div>
+</body>
+</html>
