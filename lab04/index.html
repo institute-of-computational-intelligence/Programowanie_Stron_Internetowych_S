@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <title>PSI</title>
+    <meta name="author" content="MZ">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="description" content="Strona PSI">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="doTheThings()">
+    <p>Wylosowałem liczbę od 1 do 10. Zgadniesz jaką?</p>
+    <input type="text" id="z1_input"><button onclick="zad1()">Spróbuj</button>
+    <p id="z1_answer"><p>
+    <hr>
+
+    <p>Kalkulator</p>
+    <input type="text" id="z2_input_A">
+    <input type="text" id="z2_input_B">
+    <button onclick="zad2_mult()">Mnóż</button>
+    <button onclick="zad2_div()">Dziel</button>
+    <input type="text" disabled="disabled" id="z2_result">
+    <hr>
+
+    <p>Konwerter</p>
+    <input type="text" id="z3_input">
+    <button onclick="zad3_C2F()">C na F</button>
+    <button onclick="zad3_F2C()">F na C</button>
+    <script type="text/javascript" src="main.js"></script>
+    <hr>
+
+    <p>Potęger</p>
+    <input type="text" id="z4_input_A" placeholder="Podstawa">
+    <input type="text" id="z4_input_N" placeholder="Wykładnik">
+    <button onclick="zad4()">Potęguj</button>
+    <input type="text" disabled="disabled" id="z4_result">
+    <hr>
+
+    <p>Siłacz</p>
+    <input type="text" id="z5_input">
+    <button onclick="zad5()">!</button>
+    <input type="text" disabled="disabled" id="z5_result">
+    <hr>
+
+    <p>Sorter</p>
+    <input type="text" id="z6_input" placeholder="rozmiar">
+    <button onclick="zad6()">Sortuj</button>
+</body>
+</html>
