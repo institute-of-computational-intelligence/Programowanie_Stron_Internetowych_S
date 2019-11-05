@@ -7,5 +7,8 @@ document.querySelector('#btn-1').addEventListener('click', () => {
     p.style.color = 'red';
 })
 //*zad2
-
+document.querySelector('#btn-2').addEventListener('click', () => {
+    const image = document.getElementById('img');
+    image.src = 'https://i.stack.imgur.com/vcsOT.png';
+})
 //*zad3
