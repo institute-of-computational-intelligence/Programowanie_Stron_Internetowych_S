@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Laboratorium nr.4 - zadania" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <link rel="stylesheet" type="text/css" href="lab4style.css">
+       
+        <script type="text/javascript" src="zad1.js" async></script>
+        <script type="text/javascript" src="zad2.js" async></script>
+        <script type="text/javascript" src="zad3.js" async></script>
+        <script type="text/javascript" src="zad4.js" async></script>
+        <script type="text/javascript" src="zad5.js" async></script>
+        <script type="text/javascript" src="zad6.js" async></script>
+
+  
+    </head>
+
+    <body>
+        <h3>Zad.1</h3>
+        <div class="form">
+          <button type="button" onclick="generateRandomNumber();">Generate Number</button>
+          <div class="resultTable">
+              <p class="guesses"></p>
+              <p class="lastResult"></p>
+              <p class="lowOrHi"></p>
+          </div>
+          <label for="guessField">Wpisz liczbe (od 1 do 10): </label><input type="text" id="guessField" class="guessField">
+          <input type="submit" value="Submit guess" class="guessSubmit">
+        </div>
+
+
+        <h3>Zad.2</h3>    
+        <label for="FirstNumber">1st Number: </label><input type="text" id="FirstNumber" class="FirstNumber"><br><br>
+        <label for="SecondNumber">2st Number: </label><input type="text" id="SecondNumber" class="SecondNumber"> <br><br>
+        <button type="button" class="MultiplyButton">Multiply</button>
+        <button type="button" class="DivideButton">Divide</button>
+        <p id="ResultOfCalculation"></p>
+
+
+        <h3>Zad.3</h3>
+        <label for="selectTemperature">Convert to: </label><select id="selectTemperature">
+            <option value="none" selected disabled hidden>Select an Option</option>
+            <option value="celsjusz">Celsjusz</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select><br><br>
+        <label for="TemperatureInput"> </label><input type="text" id="TemperatureInput" class="TemperatureInput">
+        <button type="button" class="ConvertTemperatureButton">Convert</button>
+        <p id="ResultOfConvertingTemperature"></p>
+
+        
+
+        <h3>Zad.4</h3>
+        <label for="base">a: </label><input type="text" id="base" class="base">
+        <label for="power">n: </label><input type="text" id="power" class="power">
+        <button type="button" class="expButton">Calculate a^n</button>
+        <p id="expResult"></p>
+        
+
+        <h3>Zad.5</h3>
+        <label for="factorialInput">x: </label><input type="text" id="factorialInput">
+        <button type="button" class="CalculateFactorialInputButton">Calculate x!</button>
+        <p id="factorialResult"></p>
+
+
+        <h3>Zad.6</h3>
+        <p id="ShowUnsortedArray"></p>
+        <button type="button" class="SortArray">Sort Array!</button>
+        <p id="ShowSortedArray"></p>
+
+
+
+
+
+    </body>
+
+
+
+        
+</html>
