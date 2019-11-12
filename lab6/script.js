@@ -1,6 +1,5 @@
 //*zad1
 $('#zmienKolor').click(() => {
-        $('#component').parent('p')
-    }
-
-);
+    $('p').css('color', 'red');
+    $('div').css('color', 'blue');
+})
