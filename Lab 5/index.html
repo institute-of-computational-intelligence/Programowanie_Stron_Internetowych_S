@@ -1,17 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
         <meta charset="UTF-8">
         <title>PSI</title>
 </head>
 <body>
-
+<p id="zad1">Zad 1:</p>
 <p id="p2">Hello World!</p>
 <p>The paragraph above was changed by a script.</p>
 <input type="button" onClick="kolor()" Value="kolor" /><br><br>
+
+<hr>
+<p id="zad2">Zad 2:</p>
+
 <img id="zdjecie" src="kot.jpg"><br>
 Ścieżka do zdjęcia: <input type="text" id="sorce"><br>
 <input type="button" onClick="obraz()" Value="Zmiana zdjęcia" />
+<br><br>
+
+<hr>
+<p id="zad3">Zad 3:</p>
+
 <ul id="ul">
     <li>element 1</li>
     <li>element 2</li>
@@ -20,10 +29,24 @@
 Nazwa:<input type="text" id="t1"><br>
 Odniesienie:<input type="text" id="t2"><br>
 <input type="button" onClick="odn()" Value="odniośnik" /><br>
+<br>
+
+<hr>
+<p id="zad4">Zad 4:</p>
+
 <div id="zad4" onmouseover="mOver(this)" onmouseout="mOut(this)" onclick="klikniecie(this)">tekst</div>
 <div id="zad4.1"></div>
+<br>
 
-<input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zmiana"/>
+<hr>
+<p id="zad5">Zad 5:</p>
+
+<a href="#zad1"><input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zad 1"/></a>
+<a href="#zad2"><input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zad 2"/></a>
+<a href="#zad3"><input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zad 3"/></a>
+<a href="#zad4"><input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zad 4"/></a>
+<a href="#zad5"><input type="button" onmouseover="mOver1(this)" onmouseout="mOut1(this)" onclick="klikniecie1(this)" value="Zad 5"/></a>
+
 </body>
 <script src="./script.js"></script>
 </html>

@@ -31,10 +31,10 @@ function klikniecie(obj) {
     document.getElementById("zad4.1").innerHTML=t1;
 }
 function mOver1(obj) {
-    obj.style.fontSize="20px";
+    obj.style.fontWeight = "bold";
     obj.style.background="blue";
 }
 function mOut1(obj) {
-    obj.style.fontSize="14px"
-    obj.style.background="gray";
+    obj.style.fontWeight = "normal";
+    obj.style.background="";
   }
