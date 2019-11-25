@@ -1,0 +1,28 @@
+#first{
+    background-color: rgb(9, 168, 168);
+    color:black;
+    width:330px;
+    font-size:24px;
+    text-align: center;
+    cursor:pointer;
+}
+body{
+    margin:0;
+    background-color:#2F3336;
+    color:#efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+#button{
+    margin-left:auto;
+    margin-right:auto;
+}
+a{
+    text-decoration: none;
+    color:#adadad;
+    cursor:progress;
+}
