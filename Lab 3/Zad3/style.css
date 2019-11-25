@@ -1,0 +1,78 @@
+body{
+    background-image: url("img/tlo.png");
+    margin:0px;
+
+}
+#container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#logo{
+    background-color:rgb(104, 199, 231);
+    padding: 15px;
+    text-align:center;
+    font-weight: bold;
+
+}
+#menu{
+    float:left;
+    background-color:rgb(109, 102, 102);
+    width: 140px;
+		min-height: 640px;
+		padding: 10px;
+}
+#content{
+    float:left;
+    font-size:20px;
+    background-color: lightblue;
+    text-align:justify;
+    padding: 20px;
+        width: 800px;
+        min-height: 620px;
+        
+}
+#footer{
+    clear:both;
+    background-color: rgb(104, 199, 231);
+    padding: 10px;
+    text-align:right;
+}
+.option{
+	font-size: 18px;
+    opacity: 0.8;
+    padding: 4px;
+}
+.option:hover
+{
+    background-color: lightcoral;
+    opacity: 0.65;
+	cursor: pointer;
+}
+.fff{
+    text-align:right;
+    padding-bottom: 30px;
+}
+h6{
+    margin:0px;
+}
+.optiont{
+    border: 0.85px dotted gray;
+    padding-bottom: 10px;
+}
+#czytanie{
+    text-align: center;
+    width:100px;
+    height:30px;
+    background-color: rgb(57, 153, 185);
+    margin-left:350px;
+   
+}
+.news
+{ text-align: center;
+    width:150px;
+    height:38px;
+    background-color:rgb(57, 153, 185) ;
+    border-radius:10px;
+}

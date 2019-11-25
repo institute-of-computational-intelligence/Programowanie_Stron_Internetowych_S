@@ -1,0 +1,33 @@
+body{
+
+}
+#container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#logo{
+    background-color: red;
+    padding: 15px;
+
+}
+#menu{
+    float:left;
+    background-color:green;
+    width: 140px;
+		min-height: 640px;
+		padding: 10px;
+}
+#content{
+    float:left;
+    background-color: blue;
+    padding: 20px;
+        width: 800px;
+        min-height: 620px;
+}
+#footer{
+    clear:both;
+    background-color: yellow;
+    padding: 20px;
+}
