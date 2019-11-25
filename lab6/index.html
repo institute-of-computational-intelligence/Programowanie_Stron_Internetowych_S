@@ -16,6 +16,8 @@
     Div tekst 6
 </div>
 
+<span class="orange">Pomarańczowy</span>
+
 <button id="zmienKolor">Zmień kolor</button>
 
 <body>
@@ -28,6 +30,10 @@
             });
             $('div').each(function(){
                 $(this).css("color", "red");
+            });
+
+            $(".orange").each(function(){
+                $(this).css("color", "orange");
             });
         })
     </script>
