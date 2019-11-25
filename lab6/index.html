@@ -51,6 +51,14 @@
     <p id="mojZnacznik">Paragraf 2</p>
 </div>
 
+<div>
+    <h1>Header</h1>
+    <h2>Header 2</h2>
+    <h6>Header 6</h6>
+    <span>Span</span>
+    <i>Italic</i>
+</div>
+
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
@@ -95,7 +103,10 @@
         // zadanie 7
         $('div p#mojZnacznik').css("border", "1px dashed red");
 
-
+        // zadanie 8
+        $("div h1").siblings().each(function(){
+            $(this).css("color", "green");
+        })
 
     </script>
 </body>
