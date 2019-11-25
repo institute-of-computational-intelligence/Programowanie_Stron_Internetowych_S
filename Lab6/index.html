@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab6</title>
+    <meta name="description" content="Nie wiem jeszcze">
+    <meta name="keywords" content="lab6,fajnie,nie_wiem">
+    <meta name="author" content="Damian Tamioła">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">        
+        <h1>Strona przedmiotu PSI</h1>
+    </div>
+
+    <div class="main">
+        <div class="side-menu">
+            <h1 id="menubutt">Menu</h1>
+            <div id="menubuttons">
+                <a class="huwno" href="#"><p>Odnośnik 1</p></a>
+                <a class="huwno" href="#"><p>Odnośnik 2</p></a>
+                <a class="huwno" href="#"><p>Odnośnik 3</p></a>
+                <a class="huwno" href="#"><p>Odnośnik 4</p></a>
+                <a class="huwno" href="#"><p>Odnośnik 5</p></a>
+            </div>
+        </div>
+
+        <div class="side-content">
+            <div class="side-content-box">
+                <div id="zmienKolor" class="button1">Zmień kolor</div>
+                <p>element p 1</p>
+                <p>element p 2</p>
+                <p>element p 3</p>
+                <div class='divjQ'><p>div 1</p></div>
+                <div class='divjQ'><p>div 2</p></div>
+                <div class='orange'><p>div 3</p></div>
+
+                <ul id="ul1">
+                    <li>element 1</li>
+                    <li>element 2</li>
+                </ul>
+                <input type="text" id="ultresc">
+                <div id="dodajPoczatek" class="button1">Dodaj na początku</div>
+                <div id="dodajKoniec" class="button1">Dodaj na końcu</div>
+
+                <div id="mojDiv"><p>Mój div</p></div>
+
+
+                <div><p id="mojZnacznik">Mój znacznik</p></div>
+            </div>
+        </div>
+        </div>
+        <script>
+            $("document").ready(()=>{
+
+                $("#zmienKolor").click(()=> {
+                    $("div").css("background-color", "red");
+                    $("p").css("color", "blue");
+                    $(".orange").css("background-color", "orange");
+                });
+
+                $("#dodajPoczatek").click(()=>{
+                    tresc = $("#ultresc").val();
+                    $("#ul1 li:first").before('<li>'+tresc+'</li>');
+                });
+
+                $("#dodajKoniec").click(()=>{
+                    tresc = $("#ultresc").val();
+                    $("#ul1 li:last").after('<li>'+tresc+'</li>');
+                });
+
+                $("#mojDiv").before('<div id="przed"><p>Przed div</p></div>');
+
+                $("p:last").addClass("ostatni");
+
+                $("#mojZnacznik").parent().attr("style", "border: 3px black solid");
+
+                $("div").siblings("h1").attr("style", "color: green");
+
+                menuHidden = false;
+                $("#menubutt").click(()=> {
+                    if(menuHidden){
+                        menuHidden = false;
+                        $("#menubuttons").show("slow");
+                    } else {
+                        menuHidden = true;
+                        $("#menubuttons").hide("slow");
+                    }
+                });
+
+                $("#mojDiv").click(()=>{
+                    $("#mojDiv").animate({left: '+=100px'}, 500);
+                    $("#mojDiv").children("p").animate({fontSize: "+=20px"}, 500);
+                })
+            });
+        </script>
+        </div>
+</body>
+</html>
