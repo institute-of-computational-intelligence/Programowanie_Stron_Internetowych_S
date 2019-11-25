@@ -1,0 +1,9 @@
+.styl1 {
+    color: green;
+}
+
+#effectDiv {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+}
