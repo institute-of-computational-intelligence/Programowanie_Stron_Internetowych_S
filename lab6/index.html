@@ -5,6 +5,15 @@
   <meta charset="utf-8">
 
   <title>Lab 6</title>
+
+  <style>
+      p.paragraf {
+          font-size:18px;
+          color:green;
+          font-weight:bold;
+          background:#facccc;
+      }
+  </style>
 </head>
 
 
@@ -72,6 +81,10 @@
         });
 
         $("#mojDiv").before("<div><p>Dowolny tekst</p></div>");
+
+        $("p").last().addClass('paragraf');
+
+        
 
     </script>
 </body>
