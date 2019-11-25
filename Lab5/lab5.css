@@ -4,3 +4,23 @@
     border: 2px double blue;
     padding: 15px;
 }
+
+.buttonsNav
+{
+    border: 1px double black;
+    width: 100px;
+    margin: 5px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.classB
+{
+    font-weight: 100;
+}
+
+.hyperlinki
+{
+    color: black;
+    text-decoration: none;
+}

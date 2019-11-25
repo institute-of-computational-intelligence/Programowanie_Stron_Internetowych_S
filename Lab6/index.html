@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8" />
+        <title>Lab6</title>
+        <style>
+        .styl
+        {
+            color: greenyellow;
+            font-size: 36px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button id="zmienKolor">Zmien kolor</button>
+            <p>Cos tam sdadas</p>
+            <p>GASDFASDASDas</p>
+        </div>
+        <div class="orange">
+            <p>latakawce ;d</p>
+            <p>ubenc bec</p>
+        </div>
+        <div id="mojDiv">
+            <input type="text" id="argument" />
+            <button id="naPoczatku">Na poczatku</button>
+            <button id="naKoncu">Na koncu</button> 
+            <ul id="lista">
+                <li>fdasdf</li>
+                <li>dasdasfas</li>
+            </ul>
+        </div>
+        <div>
+            <button id="Dodaj">Dodaj</button>
+        </div>
+        <div>
+                <button id="lastP">Last P</button>
+        </div>
+        <div>
+                <p id="mojZnacznik">Moj znacznik</p>
+                <button id="dodajObramowanie">Obramowanie</button>
+        </div>
+        <div>
+                <h1>Tytul</h1>
+                <p>Cos tam</p>
+                <button id="Zmienh1">Zmien p tam gdzie h1</button>
+        </div>
+        <div>
+                <p id="Hide/Show">Hide/Show</p>
+                <p id="Fade">Fade</p>
+                <p id="Slide">Slide</p>
+                <button id="effects">Efekty</button>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $('#zmienKolor').click((e) =>
+        {
+            $('p').css('color', 'blue');
+            $('div').css('background-color', 'red');
+            $('.orange').find('p').css('color', 'orange');
+        })
+        $('#naPoczatku').click((e) =>
+        {
+            $('#lista').prepend('<li>' + $('#argument').val() + '</li>');
+        })
+        $('#naKoncu').click((e) =>
+        {
+            $('#lista').append('<li>' + $('#argument').val() + '</li>');
+        })
+        $('#Dodaj').click((e) =>
+        {
+            $('<div><p>Dowolny tekst</p></div>').insertBefore($('#mojDiv'));
+        })
+        $('#lastP').click((e) =>
+        {
+            $('p').last().addClass('styl');
+        })
+        $('#dodajObramowanie').click((e) =>
+        {
+            $('#mojZnacznik').parents('div').css('border', '2px solid red');
+        })
+        $('#Zmienh1').click((e) =>
+        {
+            $('div > h1').siblings('p').css('color', 'green');
+        })
+        $('#effects').click((e) =>
+        {
+            $('#Hide/Show').hide();
+            $('#Hide/Show').show();
+            $('#Fade').fade();
+            $('#Slide').slide();
+        })
+        </script>
+    </body>
+</html>
