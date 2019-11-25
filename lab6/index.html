@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#zmienKolor").click(function(){
+    $("p").css("color", "red");
+    $("div").css("color", "blue");
+  });
+});
+$(document).ready(function(){
+  $("#zmienKolor2").click(function(){
+    $(".pomarancza").css("color", "orange");
+    
+  });
+});
+</script>
+</head>
+<body>
+      <p class="pomarancza">This is a paragraph.</p>
+
+<div>This is a heading</div>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button id='zmienKolor'>Click</button>
+<button id='zmienKolor2'>Clic2</button>
+
+
+
+</body>
+</html>
