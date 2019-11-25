@@ -1,0 +1,156 @@
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .nowaklasa {
+            font-size: 30px;
+            color: gold;
+        }
+        .jk{
+            width:70px;
+            height: 70px;
+            background-color: red;
+           
+            margin:15px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(() => {
+            $("#zmienKolor").click(() => {
+                $("p").css("color", "blue");
+                $("div").css("color", "red");
+            });
+
+            $("#zmienKolor2").click(() => {
+                $(".orange").css("color", "orange");
+
+            });
+
+            $("#z4button").click(() => {
+                $("#lista").append('<li>' + $("#tekst").val() + '</li>');
+
+            });
+
+            $("#z4button2").click(() => {
+                $("#lista").prepend('<li>' + $("#tekst").val() + '</li>');
+
+            });
+
+            $("#z5button").click(() => {
+                $("#mojDiv").before("<div><p>dowolny tekst przed divem</p></div>");
+
+            });
+
+            $("#z5button").click(() => {
+                $("#mojDiv").before("<div><p>dowolny tekst przed divem</p></div>");
+
+            });
+
+            $("#z6button").click(() => {
+                $("body p").last().addClass("nowaklasa");
+
+            });
+
+            $("#z7button").click(() => {
+                $("#dziecko").parents('div').css("border", "5px solid blue");
+            });
+
+            $("#z8button").click(() => {
+                $("div.main-container > *").css("color", "green")
+            });
+            
+            $("#k1").click(function(){
+            $(this).hide();
+            });
+
+           
+
+            $("#z9button").click(function(){
+            $(this).slideUp();
+            });
+
+            
+
+            $("#z9button1").click(() => {
+                $("#k1").slideDown();
+            });
+
+            $("#z9button2").click(() => {
+                $("#k1").slideUp();
+            });
+
+           
+                $("#przesun").animate({marginLeft: '+=300px', fontSize: '+=30px'},'slow');
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>znacznik h1</h1>
+        <h2>znacznik h2</h2>
+        <span>znacznik h3</span>
+
+    </div>
+    <button id="zmienKolor2">zad2</button>
+    <button id="zmienKolor">zad2</button>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <div>napis w divie</div>
+
+    <p class="orange">Click me too!</p>
+    <div class="orange">napis w divie</div>
+
+    <ul id="lista">
+        <li>element 1</li>
+        <li>element 2</li>
+    </ul>
+
+    <form>
+        <input id="tekst" type="text" />
+
+    </form>
+    <button id="z4button">z4button_przod</button>
+    <button id="z4button2">z4button_dol</button>
+
+
+    <button id="z5button">z5button</button>
+    <div id="mojDiv">
+        oto ja div z id mojDiv
+
+    </div>
+    <button id="z6button">z6button</button>
+    <button id="z7button">z7button</button>
+    <div>
+
+        hfdgfdgfd
+        <p id="dziecko">jestem dzieckiem tego diva </p>
+
+    </div>
+    <button id="z8button">z8button</button>
+    
+    <p class="orange">Click me too!</p>
+    <div id="k1" class="jk">ukryj mnie</div>
+    <button id="z9button1">z9button</button>
+
+    
+    <button id="z9button2">z9_2button</button>
+    
+
+    
+    <div id="przesun">zad 10</div>
+
+</body>
+
+</html>
