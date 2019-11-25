@@ -7,6 +7,7 @@
   <title>Lab 6</title>
 </head>
 
+
 <p>Tekst 1</p>
 <p>Tekst 2</p>
 <p>Tekst 3</p>
@@ -20,10 +21,26 @@
 
 <button id="zmienKolor">Zmień kolor</button>
 
+
+<div style="margin-top:150px;">
+    <ul id="lista">
+        <li>Pierwszy element</li>
+    </ul>
+</div>
+
+
+<div>
+    <input type="text" id="tekstElementu">
+    <button class="dodajElement" data-where="beginning">Dodaj element na początek</button>
+    <button class="dodajElement" data-where="end">Dodaj element na koniec</button>
+</div>
+
+
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <script>
+        
         $("#zmienKolor").click(function(){
             $('p').each(function(){
                 $(this).css("color", "blue");
@@ -35,7 +52,23 @@
             $(".orange").each(function(){
                 $(this).css("color", "orange");
             });
+        });
+
+        $(".dodajElement").click(function(){
+            var value = $("#tekstElementu").val();
+
+            if(value != undefined && value.length > 0) {
+                if($(this).attr('data-where') === 'end') {
+                    $("#lista").append('<li>'+value+'</li>');
+                }
+                else {
+                    $("#lista").prepend('<li>'+value+'</li>');
+                }
+
+                $("#tekstElementu").val("")
+            }
         })
+
     </script>
 </body>
 </html>
