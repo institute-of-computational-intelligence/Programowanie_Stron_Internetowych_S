@@ -143,6 +143,14 @@
     </ul>
 </div>
 
+<!-- zadanie 10 -->
+<div style="margin-top:150px">
+    <div id="animacja" style="position:relative; width:300px; height:120px; background:red; color:white; text-align:center;">Animacja</div>
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+</div>
+
+
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
@@ -234,6 +242,18 @@
         $("ul.menu2 > li").on('mouseleave',  function(){
             $(this).find('> ul').fadeOut();
         });
+
+        $("#start").click(function(){
+            $("#animacja").animate({
+                left: "+=150",
+                fontSize: "32px"
+            }, 3000);
+        })
+
+        $("#reset").click(function(){
+            $("#animacja").css("left", 0).css("font-size", "16px");
+        })
+   
 
     </script>
 </body>
