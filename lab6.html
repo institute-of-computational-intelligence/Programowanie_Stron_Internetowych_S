@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <style>
+        .predefiniowany{
+            background-color: black;
+        }
+        #toggleElem { height: 100px; border: 2px solid gold;}
+        #fadeElem { height: 100px; border: 2px dashed sandybrown;}
+        #slideElem { height: 100px; border: 2px dotted salmon;}
+        #animElem {height: 100px; background-color: khaki;}
+    </style>
+</head>
+<body>
+    <div id="1">
+        <p>Tutaj zmieniamy kolor na niebieski</p>
+        <div>Tutaj na czerwony</div>
+        <div>
+            <p>Paragraf w divie</p>
+        </div>
+        <button id="zmienKolor">Zmien kolor</button>
+    </div>
+    <div id="2">
+            <p class="orange">Na pomaranczowy</p>
+        <button class="orange" id="zmienKolor2">Zmien kolor</button>
+    </div>
+    <div id="3">
+        <input type="text" name="" id="dodajLista">
+        <button id="dodajPoczatek">Dodaj na poczatek list</button>
+        <button id="dodajKoniec">Dodaj na koniec list</button>
+        <ol></ol>
+    </div>
+    <div id="4">
+        <div id="mojDiv"></div>
+        <button id="dodajDiv">Dodaj przed Element</button>
+    </div>
+    <div id="5">
+        <button id="ostatniP">Zmien ostatni paragraf</button>
+    </div>
+    <div id="6">
+        <div>
+            <p id="mojZnacznik">Paragraf mojZnacznik</p>
+        </div>
+        <button id="dodajRamki">Dodaj ramki</button>
+    </div>
+    <div id="7">
+        <h1>Header 1 tutaj jest</h1>
+        <p>Zmieniamy kolor na zielony</p>
+        <button id="zmienZielony">Zmien rodzenstwo h1 na zielony</button>
+    </div>
+    <div id="8">
+        <div id="toggleElem"></div>
+        <button id="toggleBtn">Show/Hide</button>
+        <div id="fadeElem"></div>
+        <button id="fadeBtn">Fade In/Out</button>
+        <div id="slideElem"></div>
+        <button id="slideBtn">Slide Up/Down</button>
+    </div>
+    <div id="9">
+        <div id="animElem">Element z animacja (najedz)</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //1
+        $('#zmienKolor').click((e) => {
+            $('p').css('color', 'blue')
+            $('div').css('color', 'red')
+        })
+        //2
+        $('#zmienKolor2').click((e) => {
+            $('.orange').css('color', 'orange')
+        })
+        //3
+        $('#dodajPoczatek').click((e) => {
+            let val = $('#dodajLista').val()
+            $('ol, ul, dl').prepend(`<li>${val}</li>`)
+        })
+        $('#dodajKoniec').click((e) => {
+            let val = $('#dodajLista').val()
+            $('ol, ul, dl').append(`<li>${val}</li>`)
+        })
+        //4
+        $('#dodajDiv').click((e) => {
+            $(`<div><p>DowolnyTekst</p></div>`).insertBefore('#mojDiv')
+        })
+        //5
+        $('#ostatniP').click((e) => {
+            $('p').last().addClass('predefiniowany')
+        })
+        //6
+        $('#dodajRamki').click((e) => {
+            $('p#mojZnacznik').parent().css('border', '1px solid gray')
+        })
+        //7
+        $('#zmienZielony').click((e) => {
+            $('div').children('h1').siblings().css('color', 'green')
+        })
+        //8
+        $('#toggleBtn').click(() => {$('#toggleElem').toggle()})
+        $('#fadeBtn').click(() => {$('#fadeElem').fadeToggle()})
+        $('#slideBtn').click(() => {$('#slideElem').slideToggle()})
+        //9
+        $('#animElem').hover(() => {
+            $('#animElem').animate({left: '+=100', 'font-size': '+=20'}, 1000)
+        })
+    </script>
+</body>
+</html>
