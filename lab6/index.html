@@ -5,12 +5,31 @@
   <meta charset="utf-8">
 
   <title>Lab 6</title>
-
-
-
 </head>
+
+<p>Tekst 1</p>
+<p>Tekst 2</p>
+<p>Tekst 3</p>
+<p>Tekst 4</p>
+
+<div>
+    Div tekst 6
+</div>
+
+<button id="zmienKolor">Zmień kolor</button>
 
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $("#zmienKolor").click(function(){
+            $('p').each(function(){
+                $(this).css("color", "blue");
+            });
+            $('div').each(function(){
+                $(this).css("color", "red");
+            });
+        })
+    </script>
 </body>
 </html>
