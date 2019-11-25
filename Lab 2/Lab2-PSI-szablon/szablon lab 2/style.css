@@ -1,0 +1,51 @@
+body{
+    background-color: silver;
+    font-family: Verdana;
+    font-size: 18px; 
+    background-image:url('logo.png') ;  
+    background-size:  contain;
+    background-position: center 70px ;
+    background-repeat: no-repeat;
+}
+.first{
+    background-color:gold;
+    width: 400px;
+    opacity:0.9;
+}
+.last{
+    background-color:gold;
+    width: 400px;
+    opacity:0.9;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+    margin-top:8px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 24px;
+}
+span{
+    font-weight:bold;
+}
+#op{
+    color: green;
+}
+#opT{
+    color: red;
+}
+.second{
+    border:2px dashed #3972db;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+a:hover{
+    color:gray;
+}
+.psecond{
+    text-align: right;
+}
