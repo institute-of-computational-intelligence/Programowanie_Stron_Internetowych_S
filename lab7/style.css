@@ -1,0 +1,39 @@
+.page-header {
+    border: 2px solid black;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav {
+    width: 20%;
+    padding-right: 0;
+}
+
+.jumbotron {
+    width: 80%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.sidenav a {
+    border: 1px solid black;
+}
+
+
+.footer-copyright {
+    color: white;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
