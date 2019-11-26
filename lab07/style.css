@@ -1,0 +1,23 @@
+.col-sm-3
+{ 
+    background-color: black; 
+}
+
+.col-sm-9
+{ 
+    background-color: silver; 
+}
+
+table
+{
+    margin: 1%;
+}
+
+img
+{
+    height: 50px;
+}
+
+
+
+
