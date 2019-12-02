@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+         <form>
+         Podaj liczbe:  <input id="x"><br>
+         <button id="go">Sprawdz</button>
+
+             
+
+         </form>
+            
+            </body>
+
+            <script>
+                function spr(){
+                var x = parseInt(document.getElementById('x').value);
+                a=Math.floor((Math.random() * 10) + 1); 
+              
+                
+                if(a==x){
+                    document.write("Trafiles, liczba to: " + a); 
+                }
+                else{
+                    document.write("Sprobuj jeszcze raz"); 
+                }
+                return false;
+}
+                document.getElementById('go').addEventListener('click', spr);
+
+            </script>
+</html>

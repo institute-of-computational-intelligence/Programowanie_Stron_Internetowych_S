@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+            <input id="x">
+            <input id="y">
+            
+ 
+            <button id="go">*</button>
+            <button id="go1">/</button>
+
+            <input type="text" id="result"/>
+            
+            
+            </body>
+
+            <script>
+            function add() {
+                
+             var x = parseInt(document.getElementById('x').value);
+             var y = parseInt(document.getElementById('y').value);
+ 
+             document.getElementById('result').value = x*y;
+
+
+    return false;
+}
+        function add2() {
+                
+                var x = parseInt(document.getElementById('x').value);
+                var y = parseInt(document.getElementById('y').value);
+             
+                document.getElementById('result').value = x/y;
+            
+            
+                return false;
+            }
+
+document.getElementById('go').addEventListener('click', add);
+document.getElementById('go1').addEventListener('click', add2);
+
+            </script>
+</html>
+
+
+
