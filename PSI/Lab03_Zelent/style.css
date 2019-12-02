@@ -1,0 +1,88 @@
+div.container{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.naglowek{
+    background-color:steelblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+div.menu{
+    width: 200px;
+    float: left;
+    min-height: 700px;
+    background-color: lightsteelblue;
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;    
+}
+
+div.content{
+    float: left;
+    width: 1020px;
+    min-height: 700px;
+    background-color: #D3E8FC;
+    padding: 20px;
+
+}
+footer{
+    clear: both;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    padding: 25px;
+}
+div.menu p:hover{
+    background-color:steelblue;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+div.skrot{
+    border: black solid 1px;
+}
+div.Autor{
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+div.Data{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+div.tekst{
+    clear: both;
+    padding: 10px;
+}
+
+div.CzytajDalej{
+    background-color: steelblue;
+    padding: 10px 20px;
+    margin: 0 auto;
+    color: #ffffff;
+    display: table;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+div.CzytajDalej:hover{
+    background-color:rgb(0, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    background-color: steelblue;
+    border-radius: 10px 10px 0 0;
+    margin-top: 10px;
+    padding: 10px 30px;
+    color: white;
+    display: inline-block;
+}

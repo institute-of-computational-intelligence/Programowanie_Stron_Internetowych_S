@@ -1,0 +1,54 @@
+html{
+    background-color: silver;
+    font-family: verdana;
+    font-size: 18px;
+}
+img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+div.first{
+    background-color: gold;
+}
+div.last{
+    background-color: gold;
+}
+h1{
+    font-size: 24px;
+}
+span{
+    font-weight: bold;
+}
+div.first span{
+    color: green;
+}
+div.last span{
+    color: red;
+}
+
+div.dwa{
+    border: 2px dotted blue;
+}
+
+div.last {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+div.dwa p.dwa {
+    text-align: right;
+}
