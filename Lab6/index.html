@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box {
+        margin: 40px;
+        padding: 20px;
+        border: 1px dashed #000;
+      }
+
+      .custom {
+        border: 2px dotted #ff0000;
+        margin: 5px;
+      }
+
+      p {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Tekst div
+      <button id="zmienKolor">Przycisk</button>
+      <p>Tekst paragrafu</p>
+    </div>
+
+    <div class="box">
+      <p class="orange">Orange paragraf</p>
+      <div class="orange">Orange div</div>
+    </div>
+
+    <div class="box">
+      <p>Lista</p>
+      <ul id="lista"></ul>
+
+      <form>
+        <input id="listElement" type="text" placeholder="..." />
+        <button type="button" id="addAtFirst">Dodaj na początek</button>
+        <button type="button" id="addAtLast">Dodaj na koniec</button>
+      </form>
+    </div>
+
+    <div class="box">
+      <div id="mojDiv"><p>Moj div</p></div>
+    </div>
+
+    <div class="box">
+      <div>
+        <p>Zwykly paragraf</p>
+        <p id="mojZnacznik">Paragraf z id="mojZnacznik"</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h1>Jestem h1</h1>
+    </div>
+
+    <div class="box">
+      <p>Jestem p</p>
+      <div>
+        <p>Jestem juz w innym poziomie w drzewie DOM</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div>
+        <p>Animacje</p>
+        <p id="animHide">Hide</p>
+        <p id="animShow">Show</p>
+        <p id="animFade">Fade</p>
+        <p id="animSlideButton">Slide</p>
+        <div id="animSlidePanel" style="display: none;">To jest panel</div>
+      </div>
+    </div>
+
+    <div class="box" style="position: relative; padding: 50px">
+        <div id="animuj" style="width: 100px; height: 100px; position: absolute; text-align: center;">
+            <p>Tekst</p>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script>
+      // 1, 2, 3
+      $(() => {
+        $("#zmienKolor").click(() => {
+          $("p").css({
+            color: "#0000ff"
+          });
+
+          $("div").css({
+            color: "#ff0000"
+          });
+
+          $(".orange").css({ color: "orange" });
+        });
+
+        //4
+        $("#addAtFirst").click(() => {
+          if ($("#lista li").length == 0) {
+            $("#lista").append("<li>" + $("#listElement").val() + "</li>");
+            return;
+          }
+
+          $("#lista")
+            .find("li")
+            .first()
+            .before("<li>" + $("#listElement").val() + "</li>");
+        });
+
+        $("#addAtLast").click(() => {
+          $("#lista").append("<li>" + $("#listElement").val() + "</li>");
+        });
+
+        // 5
+        $("<div><p>Tekst</p></div>").insertBefore("#mojDiv");
+
+        //6
+        $("p")
+          .last()
+          .addClass("custom");
+
+        //7
+        $("#mojZnacznik")
+          .parent()
+          .css({
+            border: "1px solid #000"
+          });
+
+        //8
+        $("div h1")
+          .parent()
+          .siblings()
+          .addBack()
+          .children()
+          .css({ color: "#00ff00" });
+
+        //9
+        $("#animHide").hide(1000);
+        $("#animShow").show(1000);
+        $("#animFade").fadeOut(1000);
+        $("#animSlideButton").click(() => {
+          $("#animSlidePanel").slideToggle(200);
+        });
+
+        //10
+        $("#animuj").animate({
+            left: '300px',
+            fontSize: '32px'
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
