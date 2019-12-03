@@ -1,0 +1,15 @@
+form.form-signin{
+    margin: 1em 5% 0 5%;
+}
+#mail{
+    margin-bottom: 1em;
+}
+#passwd{
+    margin-bottom: 1em;
+}
+
+@media (min-width: 576px) {
+    form.form-signin{
+        margin: 1em 35% 0 35%;
+    }
+}
