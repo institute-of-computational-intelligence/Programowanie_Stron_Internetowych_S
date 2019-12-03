@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <title>Strona</title>
@@ -9,18 +9,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </style>
 </head>
 
 <body>
 
 <div class="container">
     
+    <h1>FORMULARZE</h1>
+
     <div class="form-group">
         <label for="exampleInputPassword1">tekst</label>
         <input type="text" class="form-control" placeholder="tekst">
     </div>
 
+    <br>
     <div class="form-check">
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Checkbox</label>
@@ -37,17 +39,91 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Checkbox</label>
     </div>
+
+    <br>
+
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked>Radiobox</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked>Radiobox</label>
+    </div>
+
+    <br>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Textarea:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <br>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown:
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Coś</a>
+            <a class="dropdown-item" href="#">Tamto</a>
+            <a class="dropdown-item" href="#">Nic</a>
+        </div>
+    </div>
+
+    <br>
+    <p>Wrzuć plik:</p>
+    <label class="btn btn-secondary">
+        File Upload
+        <input type="file" hidden>
+    </label>
 
     <br><br>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
+        Przeczytaj regulamin
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Regulamin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Treść regulaminu:</p>
+                <p>
+                        1. Do pracowni komputerowej wchodzimy tylko pod opieką nauczyciela.
+                </p>
+                <p>
+                        2. Przed rozpoczęciem pracy na stanowisku uczniowie są zobowiązani do sprawdzenia
+                        jego stanu technicznego i zgłoszenia dostrzegalnych usterek nauczycielowi
+                        prowadzącemu zajęcia.
+                </p>
+                <p>
+                        3. Zasobami sprzętowymi i programowymi zarządza opiekun pracowni .
+                </p>
+                <p>
+                        4. Ze sprzętu komputerowego korzystamy zgodnie z ogólnymi zasadami BHP.
+                </p>
+                <p>
+                        5. Uruchomienie komputera oraz logowanie odbywa się zgodnie ze wskazaniami
+                        nauczyciela.
+                </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Akceptuj</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="radio">
-        <label><input type="radio" name="optradio" checked>Radiobox</label>
-    </div>
-    <div class="radio">
-        <label><input type="radio" name="optradio" checked>Radiobox</label>
-    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">
+        <a href="index.html" style="color: white; text-decoration: none; ">Zatwierdź formularz</a>
+    </button>
 
-    
 
 </div>
 
