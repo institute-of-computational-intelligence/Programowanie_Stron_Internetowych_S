@@ -9,6 +9,11 @@
             color: greenyellow;
             font-size: 36px;
         }
+        #anim
+        {
+            background-color: greenyellow;
+            width: 70px;
+        }
         </style>
     </head>
     <body>
@@ -46,10 +51,14 @@
                 <button id="Zmienh1">Zmien p tam gdzie h1</button>
         </div>
         <div>
-                <p id="Hide/Show">Hide/Show</p>
-                <p id="Fade">Fade</p>
-                <p id="Slide">Slide</p>
-                <button id="effects">Efekty</button>
+                <p id="H1">Hide/Show/Fade/Slide</p>
+                <button id="Hide">Hide</button>
+                <button id="Show">Show</button>
+                <button id="Fade">Fade</button>
+                <button id="Slide">Slide</button>
+        </div>
+        <div id="anim">
+            Animacja!
         </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -84,12 +93,28 @@
         {
             $('div > h1').siblings('p').css('color', 'green');
         })
-        $('#effects').click((e) =>
+        $('#Hide').click((e) =>
         {
-            $('#Hide/Show').hide();
-            $('#Hide/Show').show();
-            $('#Fade').fade();
-            $('#Slide').slide();
+            $('#H1').hide();
+        })
+        $('#Show').click((e) =>
+        {
+            $('#H1').show();
+        })
+        $('#Fade').click((e) =>
+        {
+            $('#H1').fadeToggle('slow');
+        })
+        $('#Slide').click((e) =>
+        {
+            $('#H1').slideToggle();
+        })
+        $('#anim').click((e) =>
+        {
+            var div = $('#anim');
+            div.animate({left: '1000px'}, "slow");
+            div.animate({fontSize: '150px', width: '700px', height: '200px', opacity: '0.4'}, 'slow');
+            div.animate({fontSize: '30px', width: '125px', height: '30px', opacity: '0.8'}, 'slow');
         })
         </script>
     </body>
