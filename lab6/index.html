@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Zad 1</h1>
+    //"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+<br>
+<br>
+<h1>Zad 2</h1>
+<script>
+    $(document).ready(function(){
+        $("#zmienKolor").click(function() {
+            $("p").css("color", "blue");
+            $("div").css({"color": "red", "background-color": "black"})
+        });
+    });
+</script>
+
+
+<p>Przykladowy znacznik</p>
+
+
+<div>
+    Przykladowy napis w divie
+</div>
+<button id="zmienKolor">Kliknij</button>
+
+<h1>Zad 3</h1>
+
+<script>
+    $(document).ready(function() {
+        $("#zmienKolor").click(function() {
+           $(".orange").css("color", "orange");
+        });
+    });
+</script>
+<p class = "orange">Przykladowy znacznik orange 1</p>
+<p class = "orange">Przykladowy znacznik orange 2</p>
+<p class = "orange">Przykladowy znacznik orange 3</p>
+
+<h1>Zad 4</h1>
+
+<script>
+    $(document).ready(function () {
+       $("#bk").click(function () {
+           let a = $("textarea").val();
+           $("ol").append("<li>"+a+"</li>");
+
+       });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#bp").click(function () {
+            let a = $("textarea").val();
+            $("ol").prepend("<li>"+a+"</li>");
+
+        });
+    });
+</script>
+
+<ol>
+    <li>element 1</li>
+    <li>element 2</li>
+    <li>element 3</li>
+    <li>element 4</li>
+</ol>
+
+<form>
+    <textarea id="textarea"></textarea>
+</form>
+
+<button id = "bk">Dodaj na koniec</button>
+<button id = "bp">Dodaj na poczatek</button>
+
+<h1>Zad 5</h1>
+
+
+<script>
+    $(document).ready(function () {
+        $("#wstaw").click(function () {
+
+
+            let b = $("<p>Przykladowy napis</p>");
+            let a = $("<div></div>").append(b);
+            $(a).css("background-color", "yellow");
+
+
+            $("#mojDiv").before(a);
+        });
+
+    });
+
+</script>
+
+<div id = "mojDiv">
+    Mój Div
+</div>
+<button id="wstaw">Wstaw</button>
+
+<h1>Zad 6</h1>
+
+<p id="przykladowy">Przykladowy znacznik do ktorego przypisze klase</p>
+<style>
+    .klasa{
+        color: brown;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+       $("#przypisz").click(function () {
+           $("#przykladowy").addClass("klasa");
+       });
+    });
+</script>
+<button id="przypisz">Przypisz klase do p</button>
+
+<h1>Zad 7</h1>
+
+
+<div id ="div1">
+    <p id="moj Znacznik">Dziecko</p>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("p").parent("div").css({"color": "red", "border": "2px solid red"});
+    });
+</script>
+
+<div><h1>Zad 8</h1></div>
+
+
+<script>
+    $(document).ready(function(){
+        $("h1").parent("div").css({"color": "green"});
+    });
+</script>
+
+<h1>Zad 9</h1>
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+    });
+</script>
+
+
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#1div").fadeIn();
+            $("#2div").fadeIn("slow");
+            $("#3div").fadeIn(3000);
+        });
+    });
+</script>
+
+
+<p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="1div" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="2div" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="3div" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+<script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+        });
+    });
+</script>
+<style>
+    #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+        padding: 50px;
+        display: none;
+    }
+</style>
+
+
+<div id="flip">Click to slide down panel</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var div = $("div");
+            div.animate({left: '100px'}, "slow");
+            div.animate({fontSize: '3em'}, "slow");
+        });
+    });
+</script>
+
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>
