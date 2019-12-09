@@ -1,0 +1,14 @@
+a:hover{
+    background-color: aqua;
+}
+
+.dotted{
+    border: aqua dotted 2px;
+}
+
+.news{
+    top:-31px;
+    left: -2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
