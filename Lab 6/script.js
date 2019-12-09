@@ -23,4 +23,39 @@ $(document).ready(function() {
         $('body p').filter(function( index ) {
             return index === count-1}).append('znalazlem');
     });
+    $('#obramowanie').click(function() {
+        $('body').find('#mojZnacznik').parent().css('border-style','solid');
+    });
+    $('#zmienKolor3').click(function() {
+        $('h1').siblings().css('color', 'green');
+        $('h1').css('color', 'green');
+    });
+    $('#show').click(function() {
+        $('#mojDiv').show();
+        $('#show').hide();
+        $('#hide').show();
+    });
+    $('#show').hide();
+    $('#hide').click(function() {
+        $('#mojDiv').hide();
+        $('#hide').hide();
+        $('#show').show();
+    });
+    $('.module-toggle').on('click', function() {
+        $(this).prev().fadeToggle();
+    });
+    $('.module-toggle2').on('click', function() {
+        const $btn = $(this);
+    
+        $(this).prev().slideToggle(function() {
+            //this tutaj wskazuje na element zwijany
+    
+            //sprawdzam czy tekst po zwinięciu/rozwinięciu jest widoczny
+            if ($(this).is(':visible')) {
+                $btn.text('Ukryj treść');
+            } else {
+                $btn.text('Pokaż treść');
+            }
+        });
+    });
 });
