@@ -18,14 +18,15 @@ async function GetData3() {
 }
 
 async function ShowData() {
-    gridDataFetch = await $.get("https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json");
+    var response = await $.get("https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json");
+	var gridDataFetch = JSON.parse(response)
     $('#table').bootstrapTable({
         data: gridDataFetch
     });
 }
 
 btn = document.getElementById("get-data-btn");
-btn.addEventListener("click", GetData1);
-btn.addEventListener("click", GetData2);
-btn.addEventListener("click", GetData3);
+// btn.addEventListener("click", GetData1);
+// btn.addEventListener("click", GetData2);
+// btn.addEventListener("click", GetData3);
 btn.addEventListener("click", ShowData);
