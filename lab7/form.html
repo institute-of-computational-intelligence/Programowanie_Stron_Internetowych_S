@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Formularz</title>
+</head>
+<body>
+<div class="container" style="margin-top:50px;">
+    <form>
+        <div class="form-group">
+            <label for="nameField">Imię i nazwisko</label>
+            <input type="text" class="form-control" id="nameField"  placeholder="Wpisz imię i nazwisko">
+        </div>
+        <div class="form-group">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Wartość 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Wartość 2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3">Wartość 3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                <label class="form-check-label" for="inlineCheckbox4">Wartość 4</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                    Pierwsze radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    Drugie radio
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="descriptionField">Opis</label>
+            <textarea class="form-control" id="descriptionField" placeholder="Wpisz opis"></textarea>
+        </div>
+        <div class="form-group">
+            <select class="custom-select">
+                <option value="">Wybierz opcje</option>
+                <option value="1">Pierwsza opcja</option>
+                <option value="2">Druga opcja</option>
+                <option value="3">Trzecia opcja</option>
+            </select>
+        </div>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" >
+            <label class="custom-file-label" for="validatedCustomFile">Wybierz plik...</label>
+        </div>
+        <button style="margin-top:10px;" type="submit" class="btn btn-primary">Wyślij</button>
+
+        <div>
+            <!-- Button trigger modal -->
+            <button style="margin-top:40px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Pokaż modal
+            </button>
+        </div>
+    </form>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tytuł</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Vestibulum posuere viverra nisi sed mattis. Nunc sagittis auctor ullamcorper. Mauris ac augue eu lacus posuere elementum. Sed eget eros et eros molestie molestie. Praesent pellentesque sed nunc id cursus. Pellentesque varius tellus quis urna posuere pellentesque. Duis sit amet libero imperdiet, molestie ante et, volutpat lacus. Vestibulum a tortor odio. Proin pellentesque ante sit amet suscipit mattis. Donec consectetur nunc non vulputate gravida.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
