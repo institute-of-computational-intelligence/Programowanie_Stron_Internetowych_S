@@ -1,7 +1,12 @@
-document.querySelector(".btn").addEventListener("click", function() {
-  fetch(
-    "https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json"
-  )
+let gridDataFetch;
+let gridDataAsync;
+let gridDataAjax;
+const link =
+  "https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json";
+//*zad5
+const button = document.querySelector(".btn");
+button.addEventListener("click", function() {
+  fetch(link)
     .then(response => {
       response.json().then(json => {
         gridDataFetch = json;
@@ -11,3 +16,14 @@ document.querySelector(".btn").addEventListener("click", function() {
     })
     .catch(err => console.log(err));
 });
+//*zad6
+button.addEventListener("click", async function() {
+  try {
+    const response = await fetch(link);
+
+    const gridDataAsync = await response.json();
+    console.log(gridDataAsync);
+  } catch (err) {}
+});
+//*zad7
+$(function() {});
