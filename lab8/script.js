@@ -1,7 +1,10 @@
 var gridDataFetch = [];
 var butt = document.getElementById("butt");
-
-butt.addEventListener("click", async function() {
+var search = document.getElementById("search");
+//BUTTON
+// butt.addEventListener("click", async function() {
+//Without button
+async function loadPage() {
   // fetch promise
   //   fetch(
   //     "https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json"
@@ -35,39 +38,112 @@ butt.addEventListener("click", async function() {
   //     method: "get"
   //   }).done(res => console.log(res));
 
-  // create table
-  var $table = $("<table>");
-  // caption
-  $table
-    .append("<caption>Product</caption>")
-    // thead
-    .append("<thead>")
-    .children("thead")
-    .append("<tr />")
-    .children("tr")
-    .append("<th>A</th><th>B</th><th>C</th><th>D</th>");
+  for (i = 0; i < gridDataFetch.length; i++) {
+    $("#catalog").append(
+      "<tr><td>" +
+        (i + 1) +
+        "</td><td>" +
+        gridDataFetch[i].title +
+        "</td><td>" +
+        gridDataFetch[i].type +
+        "</td><td>" +
+        gridDataFetch[i].description +
+        "</td><td>" +
+        gridDataFetch[i].filename +
+        "</td><td>" +
+        gridDataFetch[i].height +
+        "</td><td>" +
+        gridDataFetch[i].width +
+        "</td><td>" +
+        gridDataFetch[i].price +
+        "</td><td>" +
+        gridDataFetch[i].rating +
+        "</td></tr>"
+    );
+  }
+}
 
-  //tbody
-  var $tbody = $table.append("<tbody />").children("tbody");
-
-  // add row
-  $tbody
-    .append("<tr />")
-    .children("tr:last")
-    .append("<td>val</td>")
-    .append("<td>val</td>")
-    .append("<td>val</td>")
-    .append("<td>val</td>");
-
-  // add another row
-  $tbody
-    .append("<tr />")
-    .children("tr:last")
-    .append("<td></td>")
-    .append("<td>val</td>")
-    .append("<td>val</td>")
-    .append("<td>val</td>");
-
-  // add table to dom
-  $table.appendTo("#table-here");
+search.addEventListener("click", async function() {
+  $("#catalog").empty();
+  var word = $("#searchWord").val();
+  var choice = $("#choice").val();
+  if (choice == "contains") {
+    for (i = 0; i < gridDataFetch.length; i++) {
+      if (gridDataFetch[i].description.includes(word)) {
+        $("#catalog").append(
+          "<tr><td>" +
+            (i + 1) +
+            "</td><td>" +
+            gridDataFetch[i].title +
+            "</td><td>" +
+            gridDataFetch[i].type +
+            "</td><td>" +
+            gridDataFetch[i].description +
+            "</td><td>" +
+            gridDataFetch[i].filename +
+            "</td><td>" +
+            gridDataFetch[i].height +
+            "</td><td>" +
+            gridDataFetch[i].width +
+            "</td><td>" +
+            gridDataFetch[i].price +
+            "</td><td>" +
+            gridDataFetch[i].rating +
+            "</td></tr>"
+        );
+      }
+    }
+  } else if (choice == "startWith") {
+    for (i = 0; i < gridDataFetch.length; i++) {
+      if (gridDataFetch[i].description.startsWith(word)) {
+        $("#catalog").append(
+          "<tr><td>" +
+            (i + 1) +
+            "</td><td>" +
+            gridDataFetch[i].title +
+            "</td><td>" +
+            gridDataFetch[i].type +
+            "</td><td>" +
+            gridDataFetch[i].description +
+            "</td><td>" +
+            gridDataFetch[i].filename +
+            "</td><td>" +
+            gridDataFetch[i].height +
+            "</td><td>" +
+            gridDataFetch[i].width +
+            "</td><td>" +
+            gridDataFetch[i].price +
+            "</td><td>" +
+            gridDataFetch[i].rating +
+            "</td></tr>"
+        );
+      }
+    }
+  } else if (choice == "endWith") {
+    for (i = 0; i < gridDataFetch.length; i++) {
+      if (gridDataFetch[i].description.endsWith(word)) {
+        $("#catalog").append(
+          "<tr><td>" +
+            (i + 1) +
+            "</td><td>" +
+            gridDataFetch[i].title +
+            "</td><td>" +
+            gridDataFetch[i].type +
+            "</td><td>" +
+            gridDataFetch[i].description +
+            "</td><td>" +
+            gridDataFetch[i].filename +
+            "</td><td>" +
+            gridDataFetch[i].height +
+            "</td><td>" +
+            gridDataFetch[i].width +
+            "</td><td>" +
+            gridDataFetch[i].price +
+            "</td><td>" +
+            gridDataFetch[i].rating +
+            "</td></tr>"
+        );
+      }
+    }
+  }
 });
