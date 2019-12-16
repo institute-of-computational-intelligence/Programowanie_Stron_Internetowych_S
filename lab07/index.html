@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>PSI Lab7</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script>
+            const heightFix = _ => 
+            {
+                if(innerWidth < 540)
+                {
+                    $("#main-row")[0].style.height = "";
+                    $("#content")[0].style.height = innerHeight - $("#header")[0].offsetHeight - $("#footer")[0].offsetHeight - $("#menu")[0].offsetHeight + "px";
+                }
+                else 
+                    $("#main-row")[0].style.height = innerHeight - $("#header")[0].offsetHeight - $("#footer")[0].offsetHeight + "px";
+            }
+            window.addEventListener("load",heightFix);
+            window.addEventListener("resize",heightFix);
+        </script>
+    </head>
+    <body>
+        <div class="container-flex text-white">
+            <div class="py-lg-4 py-md-3 py-sm-2 py-1 px-lg-5 px-md-4 px-sm-3 px-2 bg-dark" id="header">
+                <h1>Header</h1>
+            </div>
+            <div class="row mx-0" id="main-row">
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 cos-xs-12 bg-secondary py-3" id="menu">
+                    <a href="kontenery.html"><button class="btn btn-primary my-1 w-100">Kontenery</button><br class="d-md-block d-none"></a>
+                    <a href="slider.html"><button class="btn btn-success my-1 w-100"">Slider</button><br class="d-md-block d-none"></a>
+                    <a href="form.html"><button class="btn btn-outline-danger my-1 bg-light w-100"">Formularz</button></a>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-xs-12 px-0 overflow-auto" id="content">   
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Imie</th>
+                                <th>Nazwisko</th>
+                                <th>Wiek</th>
+                                <th>Data Urodzenia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Karol</td>
+                                <td>Lorak</td>
+                                <td>22</td>
+                                <td>23.07.1997</td>
+                            </tr>
+                            <tr>
+                                <td>Kamil</td>
+                                <td>Ślimak</td>
+                                <td>21</td>
+                                <td>24.02.1998</td>
+                            </tr>
+                            <tr>
+                                <td>Miłosz</td>
+                                <td>Asd</td>
+                                <td>19</td>
+                                <td>03.02.2000</td>
+                            </tr>
+                            <tr>
+                                <td>Karol</td>
+                                <td>Tomaszak</td>
+                                <td>34</td>
+                                <td>12.08.1985</td>
+                            </tr>
+                            <tr>
+                                <td>Mikołaj</td>
+                                <td>Kaspersky</td>
+                                <td>22</td>
+                                <td>12.12.1997</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="px-2 px-md-3 px-lg-4 px-xl-5 py-3 bg-dark m-0" id="footer">
+                Footer
+            </div>
+        </div>
+    </body>
+</html>
