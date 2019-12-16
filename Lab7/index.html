@@ -1,175 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-
-    <title>Starter Template for Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        a, a:hover {
-            text-decoration: none;
-        }
-
-        .title {
-            padding: 40px;
-            color: white;
-            background-color: rgb(8, 94, 165);
-            font-size: 32px;
-        }
-
-        nav>ul {
-            padding: 0;
-            background-color: rgb(80, 142, 224);
-            list-style: none;
-            margin-bottom: 0;
-            height: 100%;
-        }
-
-        nav>ul a,
-        nav>ul p {
-            color: black;
-            padding: 20px;
-            display: block;
-            margin: 0;
-        }
-
-        nav>ul>li p {
-            font-weight: bold;
-        }
-
-        nav>ul>li.active,
-        nav>ul>li a:hover {
-            background-color: rgb(8, 94, 165);
-        }
-
-        nav>ul>li.active>a,
-        nav>ul>li a:hover {
-            color: white;
-        }
-
-        footer {
-            background-color: rgb(8, 94, 165);
-            color: white;
-            padding: 20px;
-        }
-
-        .clear-padding {
-            padding: 0;
-        }
-
-        .content {
-            background-color: rgb(149, 220, 241);
-        }
-
-        .article-style {
-            padding: 20px;
-            margin: 20px;
-            background-color: transparent;
-            position: relative;
-            margin: 80px;
-        }
-
-        .article-style .card-title {
-            position: absolute;
-            background-color: rgb(0, 94, 172);
-            color: white;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            top: -35px;
-            left: 0;
-            width: 20%;
-            text-align: center;
-            padding: 5px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="title text-center">Strona przedmiotu PSI</div>
-    <div class="row">
-        <nav class="col-2 clear-padding">
-            <ul>
-                <li>
-                    <P>Menu</P>
-                </li>
-                <li class="active">
-                    <a href="#">Strona główna</a>
-                </li>
-                <li>
-                    <a href="#">HTML</a>
-                </li>
-                <li>
-                    <a href="#">CSS</a>
-                </li>
-                <li>
-                    <a href="#">Javascript</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="col-10 clear-padding content">
-            <article class="card article-style">
-                <div class="card-body">
-                    <h5 class="card-title">News nr</h5>
-                    <div class="row justify-content-between">
-                        <div class="col-2 text-center">
-                            <strong>Author: </strong> MZ
-                        </div>
-                        <div class="col-2 text-center">
-                            <strong>Data: </ strong> 23.10.2016
-                        </div>
-                    </div>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary">Czytaj dalej</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card article-style">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary">Czytaj dalej</a>
-                    </div>
-                </div>
-            </article>
+  <body>
+    <div>
+      <h1 class="p-4 bg-info text-black text-center m-0">Strona przedmiotu PSI</h1>
+      <div class="row m-0">
+        <div class="col-sm-4 bg-info p-0">
+          <p class="nav pt-3 pl-3 pb-3 font-weight-bold"><b>MENU</b></p>
+          <nav class="nav flex-column text-white">
+            <a class="nav-link text-light" href="#">Active</a>
+            <a class="nav-link text-light" href="#">Link</a>
+            <a class="nav-link text-light" href="#">Link</a>
+            <a class="nav-link text-light" href="#">Disabled</a>
+          </nav>
         </div>
+        <div class="col-sm-8 bg-dark text-white">
+          <article class="row">
+            <div
+              class="mt-5 mb-5 ml-5 mr-5 pl-3 pr-3 pt-4 pb-4 w-100 position-relative border border-primary"
+            >
+              <div
+                class="position-absolute bg-primary pl-2 pr-2 pb-1 pt-1 news"
+              >
+                News 1
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-6"><b>Autor: </b>MZ</div>
+                <div class="col-sm-6 text-right"><b>Data: </b>23.10.2016</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet.
+              </p>
+              <div class="row">
+                <div class="col text-center">
+                  <button type="button" class="btn btn-primary">
+                    Czytaj dalej
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="row">
+            <div
+              class="mt-5 mb-5 ml-5 mr-5 pl-3 pr-3 pt-4 pb-4 w-100 position-relative border border-primary"
+            >
+              <div
+                class="position-absolute bg-primary pl-2 pr-2 pb-1 pt-1 news"
+              >
+                News 2
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-6"><b>Autor: </b>MZ</div>
+                <div class="col-sm-6 text-right"><b>Data: </b>23.10.2016</div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet.
+              </p>
+              <div class="row">
+                <div class="col text-center">
+                  <button type="button" class="btn btn-primary">
+                    Czytaj dalej
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="p-2 bg-info text-right px-4">Copyright &copy; 2016</div>
     </div>
-
-    <footer class="text-right">
-        Copyright 2016
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-</body>
-
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
 </html>
