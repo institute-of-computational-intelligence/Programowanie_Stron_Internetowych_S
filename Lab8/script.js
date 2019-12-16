@@ -25,6 +25,7 @@ function ascSort(a, b) {
   }
   return 0;
 }
+
 const fillTable = () => {
   table.innerHTML = "";
 
@@ -62,11 +63,7 @@ const fillTable = () => {
     Array.from(document.getElementById("tableColumns").children).forEach(e => {
       const elName = e.innerHTML.toLowerCase();
       let child = document.createElement("td");
-      if (elName != "#") {
-        child.innerText = dataTemp[i][elName];
-      } else {
-        child.innerText = i + 1;
-      }
+      child.innerText = dataTemp[i][elName];
       node.appendChild(child);
     });
   }
@@ -77,6 +74,9 @@ const getData = async e => {
     "https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json"
   );
   data = await response.json();
+  for (let i = 0; i < data.length; i++) {
+    data[i]["#"] = i + 1
+  }
 
   fillTable();
 };
@@ -95,6 +95,7 @@ const inputChanged = e => {
 document.getElementById("filterInput").addEventListener("keyup", inputChanged);
 
 const changeFilterType = e => {
+  ascDescBool = !ascDescBool;
   filterType = Number(e.target.options[e.target.selectedIndex].value);
   fillTable();
 };
@@ -107,7 +108,7 @@ const customSort = (text, element) => {
   if (sortProperty != text) {
     Array.from(document.getElementById("tableColumns").children).forEach(
       element => {
-        element.style.color = "#FFFFFF";
+        element.style.color = "#000000";
       }
     );
 
@@ -122,9 +123,8 @@ const customSort = (text, element) => {
 
 Array.from(document.getElementById("tableColumns").children).forEach(
   element => {
-    if (element.innerHTML.toLowerCase() != "#")
-      element.addEventListener("click", () =>
-        customSort(element.innerHTML.toLowerCase(), element)
-      );
+    element.addEventListener("click", () =>
+      customSort(element.innerHTML.toLowerCase(), element)
+    );
   }
 );
