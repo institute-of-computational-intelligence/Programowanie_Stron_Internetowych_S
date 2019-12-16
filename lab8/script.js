@@ -16,11 +16,34 @@ $.ajax({
 
 
 $("#filter").click(function(){
-    var filtered = gridData.filter(function(single) {
-      return single.height == $("#filterField").val();
-    });
+  var filterValue = $("#filterField").val();
 
-    draw(filtered);
+    if(filterValue !== undefined && filterValue.length > 0) {
+
+
+      var selectedOption = $("#filterType").find('option:selected');
+      var type = selectedOption.attr('data-type');
+
+      if(type !== undefined && type.length > 0) {
+        var filtered = gridData.filter(function(single) {
+
+          if(type === "constains") {
+            return single.description.includes(filterValue);
+          }
+          else if(type === 'start') {
+            return single.description.startsWith(filterValue);
+          }
+          else if(type === 'end') {
+            return single.description.endsWith(filterValue);
+          }
+
+          
+        });
+    
+        draw(filtered);
+      }
+      
+    }
 
 })
 
