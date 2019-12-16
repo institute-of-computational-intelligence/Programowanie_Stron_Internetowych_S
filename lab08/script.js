@@ -12,11 +12,11 @@ const inputInit = _=>
     for(propertyName of propertyNames)
     {
         table += '<td>';
-        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-contains" name="${propertyName}-filter-type" type="radio" checked>`;
+        table += `<div class="form-check my-0"><input class="form-check-input" id="${propertyName}-contains" name="${propertyName}-filter-type" type="radio" checked>`;
         table += '<label class="form-check-label">Contains</label></div>';
-        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-starts-with" name="${propertyName}-filter-type" type="radio">`;
+        table += `<div class="form-check my-0"><input class="form-check-input" id="${propertyName}-starts-with" name="${propertyName}-filter-type" type="radio">`;
         table += '<label class="form-check-label">Starts With</label></div>';
-        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-ends-with" name="${propertyName}-filter-type" type="radio">`;
+        table += `<div class="form-check my-0"><input class="form-check-input" id="${propertyName}-ends-with" name="${propertyName}-filter-type" type="radio">`;
         table += '<label class="form-check-label">Ends With</label></div>';
         table += '</td>';
     }
@@ -105,7 +105,8 @@ window.addEventListener("load",_=>
                 fillTable(data);
                 inputInit();
             });
-        });
+        })
+        .catch((err) => console.log(err));
     });
 
     $("#get-data-better").click(async _=>
