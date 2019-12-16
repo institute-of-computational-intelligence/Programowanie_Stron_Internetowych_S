@@ -11,14 +11,14 @@ const inputInit = _=>
     table += '</tr><tr>';
     for(propertyName of propertyNames)
     {
-        table += '<td><div class="form-check my-n2">';
-        table += `<input class="form-check-input" id="${propertyName}-contains" name="${propertyName}-filter-type" type="radio" checked>`;
-        table += '<label class="form-check-label">Contains</label>';
-        table += `<input class="form-check-input" id="${propertyName}-starts-with" name="${propertyName}-filter-type" type="radio">`;
-        table += '<label class="form-check-label">Starts With</label>';
-        table += `<input class="form-check-input" id="${propertyName}-ends-with" name="${propertyName}-filter-type" type="radio">`;
-        table += '<label class="form-check-label">Ends With</label>';
-        table += '</div></td>';
+        table += '<td>';
+        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-contains" name="${propertyName}-filter-type" type="radio" checked>`;
+        table += '<label class="form-check-label">Contains</label></div>';
+        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-starts-with" name="${propertyName}-filter-type" type="radio">`;
+        table += '<label class="form-check-label">Starts With</label></div>';
+        table += `<div class="form-check"><input class="form-check-input" id="${propertyName}-ends-with" name="${propertyName}-filter-type" type="radio">`;
+        table += '<label class="form-check-label">Ends With</label></div>';
+        table += '</td>';
     }
     table += '</tr>';
     $("#table-input")[0].innerHTML = table;
