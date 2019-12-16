@@ -16,7 +16,9 @@ $.ajax({
 
 
 $("#filter").click(function(){
-  var filterValue = $("#filterField").val();
+  if(gridData !== undefined && gridData.length > 0 ) {
+
+    var filterValue = $("#filterField").val();
 
     if(filterValue !== undefined && filterValue.length > 0) {
 
@@ -44,6 +46,11 @@ $("#filter").click(function(){
       }
       
     }
+    else {
+      draw(gridData);
+    }
+  }
+
 
 })
 
@@ -66,3 +73,26 @@ function draw(data) {
   });
 
 }
+var multiply = 1;
+$('table tr th').click(function(){
+  if(gridData !== undefined && gridData.length > 0 ) {
+
+    var fieldName = $(this).attr('data-name');
+
+    var sorted = gridData.sort(function(a, b){
+
+      if(a[fieldName] > b[fieldName]) {
+        return 1 * multiply;
+      }
+
+      if(a[fieldName] < b[fieldName]) {
+        return -1 * multiply;
+      }
+      return 0
+      
+    });
+
+    draw(sorted);
+    multiply = multiply * (-1);
+  }
+});
