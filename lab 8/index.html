@@ -13,21 +13,40 @@
 		<input type="button" id="get-data-btn" class="btn btn-primary" value="Get data" />
 		<br><br>
 		<div class="container">
-			<table id="table">
-				<thead>
-					<tr>
-						<th data-field="title">title</th>
-						<th data-field="type">type</th>
-						<th data-field="description">description</th>
-						<th data-field="filename">filename</th>
-						<th data-field="name">name</th>
-						<th data-field="height">height</th>
-						<th data-field="width">width</th>
-						<th data-field="price">price</th>
-						<th data-field="rating">rating</th>
-					</tr>
-				</thead>
-			</table>
+			<div class="row mb-4">
+				<div class="w-50 pr-4"><input class="form-control" type="text" id="input" placeholder="Filtr" /></div>
+				<div class="form-group w-50 pl-4">
+					<select class="form-control" id="kolumnaFormControlSelect">
+						<option>title</option>
+						<option>type</option>
+						<option>description</option>
+						<option>filename</option>
+						<option>name</option>
+						<option>height</option>
+						<option>width</option>
+						<option>price</option>
+						<option>rating</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<table id="table" class="table table-bordered table-striped">
+					<thead id="thead">
+						<tr>
+							<th data-field="title">title</th>
+							<th data-field="type">type</th>
+							<th data-field="description">description</th>
+							<th data-field="filename">filename</th>
+							<th data-field="name">name</th>
+							<th data-field="height">height</th>
+							<th data-field="width">width</th>
+							<th data-field="price">price</th>
+							<th data-field="rating">rating</th>
+						</tr>
+					</thead>
+					<tbody id="tbody"></tbody>
+				</table>
+			</div>
 		</div>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

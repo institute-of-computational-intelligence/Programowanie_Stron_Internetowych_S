@@ -19,14 +19,26 @@ async function GetData3() {
 
 async function ShowData() {
     var response = await $.get("https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json");
-	var gridDataFetch = JSON.parse(response)
+	var gridDataFetch = await JSON.parse(response)
     $('#table').bootstrapTable({
         data: gridDataFetch
     });
 }
 
 btn = document.getElementById("get-data-btn");
-// btn.addEventListener("click", GetData1);
-// btn.addEventListener("click", GetData2);
-// btn.addEventListener("click", GetData3);
+btn.addEventListener("click", GetData1);
+btn.addEventListener("click", GetData2);
+btn.addEventListener("click", GetData3);
 btn.addEventListener("click", ShowData);
+
+document.onload = ShowData();
+
+$(document).ready(async function(){
+    value = document.getElementById("kolumnaFormControlSelect").value;
+    $("#input").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#tbody tr").filter(async function() {
+            await $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
