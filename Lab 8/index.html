@@ -1,17 +1,47 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>PSI</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PSI</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
     <div class="m-2">
       <button type="button" id="data" class="btn btn-primary">Get data</button>
       <button type="button" id="data2" class="btn btn-primary">Get data</button>
+      <button class="test-ajax btn btn-primary" type="button">Get data</button>
     </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Type</th>
+            <th scope="col">Descryption</th>
+            <th scope="col">Filename</th>
+            <th scope="col">Height</th>
+            <th scope="col">Width</th>
+            <th scope="col">Price</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
 </html>
