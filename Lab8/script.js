@@ -77,7 +77,22 @@ const getData = async e => {
   for (let i = 0; i < data.length; i++) {
     data[i]["#"] = i + 1
   }
-
+  const keys = Object.keys(data[0])
+  // ADD #
+  let tabHeader = document.getElementById("tableColumns");
+  let child = document.createElement("th");
+  child.innerText = '#';
+  tabHeader.appendChild(child);
+  // FINISH
+  for (let i = 0; i < keys.length - 1; i++) {
+    let tabHeader = document.getElementById("tableColumns");
+    let child = document.createElement("th");
+    child.classList.add('cursor-pointer')
+    child.scope = "col"
+    child.innerText = keys[i].charAt(0).toUpperCase() + keys[i].slice(1);
+    tabHeader.appendChild(child);
+  }
+  addEvents();
   fillTable();
 };
 
@@ -115,16 +130,18 @@ const customSort = (text, element) => {
     ascDescBool = false;
   }
 
-  if (ascDescBool == false) element.style.color = "#00FF008F";
+  if (ascDescBool == false) element.style.color = "#21ad219F";
   else element.style.color = "#FF00008F";
   sortProperty = text;
   fillTable();
 };
 
-Array.from(document.getElementById("tableColumns").children).forEach(
-  element => {
-    element.addEventListener("click", () =>
-      customSort(element.innerHTML.toLowerCase(), element)
-    );
-  }
-);
+const addEvents = () => {
+  Array.from(document.getElementById("tableColumns").children).forEach(
+    element => {
+      element.addEventListener("click", () =>
+        customSort(element.innerHTML.toLowerCase(), element)
+      );
+    }
+  );
+}
