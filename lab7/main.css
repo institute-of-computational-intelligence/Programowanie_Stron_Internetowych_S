@@ -1,0 +1,28 @@
+
+
+h1
+{
+	font-size: 36px;
+	font-weight: 400;
+	color: #C0D06F;
+	margin: 20px;
+}
+
+
+a
+{
+color:black;
+}
+a:active
+{
+color:black;
+}
+a:disabled
+{
+color:black;
+}
+a:hover
+{
+	color:white;
+	background-color:blue;
+}
