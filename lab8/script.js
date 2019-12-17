@@ -31,6 +31,8 @@ button.addEventListener("click", async function () {
 $(function () {
   $.get(link, function (data) {
     gridDataAjax = data;
-    console.log(gridDataAjax);
+    let arr = JSON.parse(gridDataAjax)
+
+    console.log(arr);
   });
 });
