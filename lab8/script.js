@@ -20,8 +20,8 @@ button.addEventListener("click", function () {
 button.addEventListener("click", async function () {
   try {
     const response = await fetch(link);
-
     const gridDataAsync = await response.json();
+
     console.log(gridDataAsync);
   } catch (err) {
     console.log(err);
@@ -29,15 +29,8 @@ button.addEventListener("click", async function () {
 });
 //*zad7
 $(function () {
-  $(".btn").click(function () {
-    const w = $.get(link, data,
-      function (data, textStatus, jqXHR) {
-        console.log(data);
-        console.log(textStatus);
-        console.log(jqXHR);
-      },
-
-    );
-    console.log('w :', w);
+  $.get(link, function (data) {
+    gridDataAjax = data;
+    console.log(gridDataAjax);
   });
 });
