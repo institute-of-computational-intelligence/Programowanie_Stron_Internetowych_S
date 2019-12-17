@@ -1,20 +1,17 @@
-$(document).ready(function (){
+$( "#bttn" ).click(function (){
   $.get("https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json",function (data){
-  $(function() {
-    response = $.parseJSON(data);
-    $.each(response, function(i, item) {
-        var $tr = $('<tr>').append(
-            $('<td>').text(item.title),
-            $('<td>').text(item.type),
-            $('<td>').text(item.description),
-            $('<td>').text(item.filename),
-            $('<td>').text(item.height),
-            $('<td>').text(item.width),
-            $('<td>').text(item.price),
-            $('<td>').text(item.rating),
-        ).appendTo('#records_table');
-        // console.log($tr.wrap('<p>').html());
-    });
-  });
-});
+  console.log("Start");
+  console.log(data);
+  console.log("Finished");
 })
+  });
+
+
+  async function downloadData(){
+    console.log("Start Download")
+    let response = await fetch("https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json")
+    let data = await response.json()
+    console.log(data)
+    console.log("Data downloaded sucessfully")
+  }
+
