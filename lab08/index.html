@@ -13,10 +13,23 @@
   <script async src="skrypt.js"></script>
 </head>
 <body>
-  <input type="text" name="text">
-  <button id="b1" name="b1" class="btn btn-primary">Get data</button>
-
-  <table id="basicTable" class="table" class="table table-dark">
+  <input id="search" type="text" name="text">
+  <button id="b1" name="b1" class="btn btn-primary">Search</button>
+  <button id="btitle" name="btitle" class="btn btn-primary">Search only title</button>
+  <button id="b2" name="b2" class="btn btn-primary">Show all</button>
+  <table id="tab" class="table table-striped table-dark">
+      <thead>
+        <th id='title' scope='col'>Title</th>
+        <th id="type" scope='col'>Type</th>
+        <th id="description" scope='col'>Description</th>
+        <th id="filename" scope='col'>Filename</th>
+        <th id="height" scope='col'>Height</th>
+        <th id="width" scope='col'>Width</th>
+        <th id="price" scope='col'>Price</th>
+        <th id="rating" scope='col'>Rating</th>
+      </thead>
+      <tbody id='content'>
+      </tbody>
   </table>
 
 </body>

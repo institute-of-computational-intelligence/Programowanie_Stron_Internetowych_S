@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>Strona</title>
+  <meta charset="utf-8">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+  <link rel="stylesheet" href="style.css"></style>
+  <script async src="skrypt.js"></script>
+</head>
+<body>
+  
+  <p>
+    First name: 
+    <input type="text" id="name" />
+  </p>
+
+  <p>
+    Last name: 
+    <input type="text" id="last" />
+  </p>
+
+  <p>
+    Salary: 
+    <input type="number" id="salary" />
+  </p>
+
+  <input type="checkbox" id="local">Localstorage
+  <input type="checkbox" id="session">Sessionstorage
+  <p>
+    <button id="add">Add</button>
+  </p>
+
+  <table id="tab">
+    <tr>
+      <td>First</td>
+      <td>Last</td>
+      <td>Salary</td>
+    </tr>
+  </table>
+
+</body>
+</html>
