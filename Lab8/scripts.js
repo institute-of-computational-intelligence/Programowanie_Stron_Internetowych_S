@@ -1,4 +1,4 @@
-$("#get-data").click(function() {
+ $("#get-data").click(function() {
     $.ajax({
         url: "https://raw.githubusercontent.com/wedeploy-examples/supermarket-web-example/master/products.json",
 
