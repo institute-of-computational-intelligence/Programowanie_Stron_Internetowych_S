@@ -18,7 +18,7 @@ function setItem(name, value, storage) {
     if(storage === "LocalStorage") {
         localStorage.setItem(name, value);
     }
-    else { // SessionStorage
+    else if(storage === "SessionStorage"){ // SessionStorage
         sessionStorage.setItem(name, value);
     }
 }
@@ -30,4 +30,11 @@ function getItem(name, storage) {
     return sessionStorage.getItem(name);
 }
 
+function setCookie(name, value, expireDays) {
+    $.cookie(name, value, { expires: expireDays });
+}
 
+// test
+setItem('local', 'local value', 'LocalStorage');
+setItem('session', 'session value', 'SessionStorage');
+setCookie('testCookie', 'test value', 2);
