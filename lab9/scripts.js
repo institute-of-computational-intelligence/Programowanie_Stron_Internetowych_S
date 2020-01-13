@@ -35,6 +35,22 @@ function setCookie(name, value, expireDays) {
 }
 
 // test
-setItem('local', 'local value', 'LocalStorage');
-setItem('session', 'session value', 'SessionStorage');
-setCookie('testCookie', 'test value', 2);
+//setItem('local', 'local value', 'LocalStorage');
+//setItem('session', 'session value', 'SessionStorage');
+//setCookie('testCookie', 'test value', 2);
+
+var openRequest = indexedDB.open('Persons', 1);
+
+openRequest.onupgradeneeded = function() {
+    // triggers if the client had no database
+    // ...perform initialization...
+  };
+  
+  openRequest.onerror = function() {
+    console.error("Error", openRequest.error);
+  };
+  
+  openRequest.onsuccess = function() {
+    let db = openRequest.result;
+    // continue to work with database using db object
+  };
