@@ -1,5 +1,23 @@
 function addToList(firstName, lastName, salary) {
-    $("#list").append("<li>"+firstName+" "+lastName+", "+salary+"</li>");
+    let transaction = db.transaction(["persons"], "readwrite");
+
+    let persons = transaction.objectStore("persons"); // (2)
+
+    let person = {
+    firstName: firstName,
+    lastName: lastName,
+    salary: salary
+    };
+
+    let request = persons.add(person); // (3)
+
+    request.onsuccess = function() { // (4)
+    console.log("Osoba dodana ", request.result);
+    };
+
+    request.onerror = function() {
+    console.log("Błąd ", request.error);
+    }
 }
 
 $(function(){
@@ -40,17 +58,29 @@ function setCookie(name, value, expireDays) {
 //setCookie('testCookie', 'test value', 2);
 
 var openRequest = indexedDB.open('Persons', 1);
+let db;
 
 openRequest.onupgradeneeded = function() {
-    // triggers if the client had no database
-    // ...perform initialization...
+    db = openRequest.result;
+
+    if (!db.objectStoreNames.contains('persons')) {
+        var objectStore = db.createObjectStore('persons', {autoIncrement: true}); // create it
+
+        //objectStore.createIndex('test', 'test', { unique: false });
+    }
   };
   
+
   openRequest.onerror = function() {
     console.error("Error", openRequest.error);
   };
   
   openRequest.onsuccess = function() {
-    let db = openRequest.result;
-    // continue to work with database using db object
-  };
+    db = openRequest.result;
+   
+    addToList("Jan", "Kowalski", 10000);
+    addToList("Piotr", "Nowak", 20000);
+    addToList("Tomasz", "Przybylski", 30000);
+
+  }; 
+
