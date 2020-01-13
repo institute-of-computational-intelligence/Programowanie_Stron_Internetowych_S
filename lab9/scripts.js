@@ -13,3 +13,21 @@ $(function(){
         
     })
 });
+
+function setItem(name, value, storage) {
+    if(storage === "LocalStorage") {
+        localStorage.setItem(name, value);
+    }
+    else { // SessionStorage
+        sessionStorage.setItem(name, value);
+    }
+}
+
+function getItem(name, storage) {
+    if(storage === "LocalStorage") {
+        return localStorage.getItem(name);
+    }
+    return sessionStorage.getItem(name);
+}
+
+
