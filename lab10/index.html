@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>Strona</title>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <link rel="stylesheet" href="style.css"></style>
+  <script async src="skrypt.js"></script>
+</head>
+<body>
+  
+<div class="zad1">
+  <h1 data-bind="text: firstName"></h1>
+  <h1 data-bind="text: lastName"></h1>
+  <h1 data-bind="text: fullName"></h1>
+  <h1 data-bind="text: dateOfBirth"></h1>
+  <h1 data-bind="text: age"></h1>
+</div>
+
+<div class="zad4">
+  <ul>
+    <li data-bind="$persons.firstName"></li>
+  </ul>
+</div>
+
+</body>
+</html>
