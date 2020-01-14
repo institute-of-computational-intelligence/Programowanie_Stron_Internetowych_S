@@ -17,3 +17,4 @@ let viewModel = {
 let App = {
     Persons: ko.
 }
+ko.applyBindings(viewModel);
