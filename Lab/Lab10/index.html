@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="zad3">
+        <h1 data-bind="text: firstName"></h1>
+        <h1 data-bind="text: lastName"></h1>
+        <h1 data-bind="text: fullName"></h1>
+        <h1 data-bind="text: dateOfBirth"></h1>
+        <h1 data-bind="text: age"></h1>
+    </div>
+    <div class="zad4">
+        <ul data-bind="foreach: persons">
+            <li data-bind="text: $data.fullName"></li>
+        </ul>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
