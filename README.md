@@ -12,6 +12,8 @@
   ![Alt text](Img/2020_01_17_10_26_41_DevDocs_API_Documentation.png?raw=true)
   ![Alt text](Img/2020_01_17_10_28_09_Offline_DevDocs.png?raw=true)
 
+UWAGA:
+Proszę wykonywać zadania jedynie w utworzonych plikach `my-scripts.js`, `my-styles.css` oraz `index.html`. W przypadku konieczności tworzenia nowych plików `*.css` lub `*.js` proszę o ich poźniejsze ich podmontowanie w pliku. `index.html`.
 
 ## Ajax dla plików lokalnych
 
