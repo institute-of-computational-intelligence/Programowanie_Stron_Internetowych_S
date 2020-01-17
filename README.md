@@ -20,6 +20,7 @@ Aby korzystać z tych plików należy uruchomić chrome z flagą `--allow-file-a
 Proszę uruchomić wiersz poleceń (CMD) a następnie uruchomić poniższe polecenie: 
 `start chrome --allow-file-access-from-files`
 Teraz będzie możliwe wykonywanie asynchonicznych requestów do plikow lokalnych.
+
 ![Alt text](Img/cmd.png?raw=true)
 
 
