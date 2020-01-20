@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+	<title>PSI</title>
+
+	<meta
+		name="author"
+		content="MZ"
+	></meta>
+
+	<meta
+		name="keywords"
+		content="HTML,CSS"
+	></meta>
+
+	<meta
+		name="description"
+		content="Strona PSI"
+	></meta>
+
+	<meta charset="UTF-8"></meta>
+</head>
+
+<body>
+	<div class="zad8">
+		<form>
+			<p>
+				First name:
+
+				<input
+					type="text"
+					data-bind="value: person.firstName, uniqueName: true"
+				></input>
+			</p>
+
+			<p>
+				Last name:
+
+				<input
+					type="text"
+					data-bind="value: person.lastName, uniqueName: true"
+				></input>
+			</p>
+
+			<p>
+				Data urodzenia:
+
+				<input
+					type="text"
+					data-bind="value: person.dateOfBirth, uniqueName: true"
+				></input>
+			</p>
+
+			<input
+				type="button"
+				id="add-btn"
+				class="btn btn-primary"
+				value="Add"
+				data-bind="click: AddPerson"
+			></input>
+		</form>
+
+		<table>
+			<tbody data-bind="foreach: persons">
+				<tr>
+						<td>First name</td>
+						<td>Last name</td>
+						<td>Full name</td>
+						<td>Date of Birth</td>
+						<td>Age</td>
+	
+				</tr>
+				<tr>
+					<td data-bind="text: firstName"></td>
+					<td data-bind="text: $data.lastName"></td>
+					<td data-bind="text: $data.fullName"></td>
+					<td data-bind="text: $data.dateOfBirth"></td>
+					<td data-bind="text: $data.age"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="zad7"></div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+<script src="scripts.js"></script>
+</html>
