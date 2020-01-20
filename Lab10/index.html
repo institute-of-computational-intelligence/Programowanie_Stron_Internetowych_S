@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th>Imie</th>
+                <th>Nazwisko</th>
+                <th>Pełne dane</th>
+                <th>Data urodzenia</th>
+                <th>Wiek</th>
+                <th />
+            </tr>
+        </thead>
+        <tbody data-bind='foreach: persons'>
+            <tr>
+                <td><input data-bind='value: firstName, uniqueName: true' /></td>
+                <td><input data-bind='value: lastName, uniqueName: true' /></td>
+                <td><input data-bind='value: fullName, uniqueName: true' /></td>
+                <td><input data-bind='value: dateOfBirth, uniqueName: true' /></td>
+                <td><input data-bind='value: age, uniqueName: true' /></td>
+                <td><a href='#' data-bind='click: $root.removeGift'>Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
