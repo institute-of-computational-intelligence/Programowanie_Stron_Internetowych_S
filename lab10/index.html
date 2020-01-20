@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+<title>Knkockout</title>
+<script type='text/javascript' src='knockout-3.5.1.js'></script>
+</head>
+<body>
+    <div id="formularz">
+        <span data-bind="text: firstName"></span>
+        <span data-bind="text: lastName"></span>
+        <span data-bind="text: fullName"></span>
+        <span data-bind="text: dateOfBirth"></span>
+        <span data-bind="text: age"></span>
+        <form data-bind="submit: addTask">
+         Add task: <input data-bind="value: newTaskText" placeholder="What needs to be done?" />
+         <button type="submit">Add</button>
+        </form>
+    </div>
+    <ul data-bind="foreach: person">
+            <li>
+                <span data-bind="text: fullName"></span>
+                
+            </li>
+        </ul>
+// http://learn.knockoutjs.com/#/?tutorial=loadingsaving
+</body>
+</html>
