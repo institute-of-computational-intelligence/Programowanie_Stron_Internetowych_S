@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+  </head>
+  <body>
+    <div class="zad3">
+        <h1 data-bind="text: FirstName"></h1>
+    </div>
+    <div class="zad4">
+        <ul data-bind="foreach: persons">
+            <li><span data-bind="text: $data.FirstName"></span></li>
+        </ul>
+    </div>
+    <div>
+        <input></input>
+        <input></input>
+        <input></input>
+    </div>
+  </body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script src="scripts.js"></script>
+</html>
