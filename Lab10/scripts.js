@@ -4,11 +4,11 @@ function PersonViewModel () {
     this.fullName = ko.pureComputed(()=> `${this.firstName()} ${this.lastName()}`,this),
     this.dateOfBirth =  ko.observable(),
     this.age = ko.pureComputed(
-        ()=> new Date().getFullYear() - this.dateOfBirth().getFullYear(), this
+        ()=> new Date().getFullYear() - new Date(this.dateOfBirth).getFullYear(), this
     ),
     this.computedLog = ko.observable('Log: '),
     this.compute= ko.pureComputed(function (){
-        this.computedLog(this.computedLog.peek()+this.fullName+';');
+        this.computedLog(this.computedLog.peek()+this.fullName+this.age+';');
         return this.fullName;
     })
 }
